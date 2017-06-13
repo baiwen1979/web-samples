@@ -1,0 +1,310 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.columns-container
+{
+	display: block;
+}
+
+.columns-container:after
+{
+	clear: both;
+	content: "";
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+
+html
+{
+  background: #666;
+}
+
+body
+{
+	width: 1000px;
+	margin: 20px auto;
+	background: #EEE;
+	padding: 10px;
+	border-radius: 15px;
+	font: 14px/20px "Î¢ÈíÑÅºÚ", Arial, Sans-serif;
+}
+
+h1
+{
+	line-height: 1em;
+	padding: 10px;
+	border-bottom: 2px solid #3ADDE6;
+	margin-bottom: 20px;
+}
+
+ul
+{
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+ul li
+{
+	float: left;
+}
+
+ul.status
+{
+	background: #DDD linear-gradient(#EEE, #CCC);
+	border: 1px solid #BBB;
+}
+
+ul.status li
+{
+	width: 290px;
+	border-left: 1px solid #EEE;
+	border-right: 1px solid #999;
+	padding: 10px;
+	text-align: center;
+}
+
+ul.status li:last-child
+{
+	border-right: none;
+}
+
+ul.status li em
+{
+	font-style: normal;
+	font-size: 2.5em;
+}
+
+#text
+{
+	background: white;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	border: 1px solid gray;
+}
+
+#text p
+{
+	border-bottom: 1px solid lightblue;
+	padding: 4px 30px;
+	color: gray;
+}
+
+#text p:last-child
+{
+	border-bottom: none;
+}
+
+#text p span
+{
+	width: 15px;
+	display: inline-block;
+	text-align: center;
+	padding: 8px 2px;
+	font-size: 1.5em;
+}
+
+#text p span.current
+{
+	background: lightgreen;
+}
+
+#text p span.error
+{
+	background: #FED0D0;
+}
+
+#left-hand, #keyboard
+{
+	float: left;
+}
+
+#keyboard
+{
+	width: 624px;
+	margin-left: 10px;
+	background: white;
+	border: 1px solid #CCC;
+	padding: 8px;
+	border-radius: 10px;
+	color: gray;
+}
+
+#keyboard li.key
+{
+	padding: 6px 12px;
+	font-size: 0.5em;
+	height: 24px;
+	width: 12px;
+	line-height: 24px;
+	text-align: center;
+	margin:2px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+#keyboard li.key.current
+{
+	border-color: lightgreen;
+	background: yellow;
+}
+
+#keyboard li#backspace, 
+#keyboard li#l-shift,
+#keyboard li#r-shift, 
+#keyboard li#l-alt, 
+#keyboard li#r-alt, 
+#keyboard li#l-ctrl, 
+#keyboard li#r-ctrl, 
+#keyboard li#enter,
+#keyboard li#tab,
+#keyboard li#capslock
+{
+	padding: 6px 5px;
+	width: auto;
+	background: #EEE;
+}
+
+#keyboard li#tab
+{
+	width: 4em;
+}
+
+#keyboard li#capslock
+{
+	width: 6em;
+}
+
+#keyboard li#enter
+{
+	width: 58px;
+}
+
+#keyboard li#l-shift,
+#keyboard li#r-shift
+{
+	width: 86px;
+}
+
+#keyboard li#l-ctrl,
+#keyboard li#r-ctrl,
+#keyboard li#l-alt,
+#keyboard li#r-alt
+{
+	width: 50px;
+}
+
+#keyboard li#space
+{
+	width: 330px;
+}
+
+#keyboard li.key.two-line
+{
+	line-height:14px;
+}
+
+#keyboard li.key.last
+{
+	width: 26px;
+}
+
+#keyboard li.key.letter
+{
+	font-size: 20px;
+	width:20px;
+	padding:6px 8px;
+	
+}
+
+#left-hand, #right-hand
+{
+	width: 150px;
+	height: 150px;
+	margin: 0 10px;
+	background: transparent url(images/hand-sprite.png) no-repeat 0 0;
+}
+
+#left-hand p, #right-hand p
+{
+	width: 32px;
+	height: 32px;
+	margin: 160px auto 0px auto;
+	background: #3ADDE6;
+	color: white;
+	border-radius: 32px;
+	text-align:center;
+	line-height:32px;
+	position: relative;
+}
+
+#left-hand p
+{
+	left: -10px;
+}
+
+#right-hand p
+{
+	right: -10px;
+}
+
+#right-hand
+{
+	float: right;
+	background-position: -150px 0px;	
+}
+
+#left-hand.finger-1
+{
+	background-position: 0px -150px;
+}
+
+#left-hand.finger-2
+{
+	background-position: 0px -300px;
+}
+
+#left-hand.finger-3
+{
+	background-position: 0px -450px;
+}
+
+#left-hand.finger-4
+{
+	background-position: 0px -600px;
+}
+
+#left-hand.finger-5
+{
+	background-position: 0px -750px;
+}
+
+#right-hand.finger-1
+{
+	background-position: -150px -150px;
+}
+
+#right-hand.finger-2
+{
+	background-position: -150px -300px;
+}
+
+#right-hand.finger-3
+{
+	background-position: -150px -450px;
+}
+
+#right-hand.finger-4
+{
+	background-position: -150px -600px;
+}
+
+#right-hand.finger-5
+{
+	background-position: -150px -750px;
+}
+
+

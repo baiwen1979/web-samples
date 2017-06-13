@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>欢迎访问太原学院网站</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/menu.css" />
+  <link rel="stylesheet" href="styles/tab.css" />
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="太原学院"/></a>
+    </div>
+    <div id="search-bar">
+      <form action="search.php" method="get">
+        <label for="keyword">内容搜索：</label><input type="text" name="keyword" id="keyword"/>
+        <input type="submit" value="go"/>
+        <a href="#">ENGLISH</a>
+      </form>     
+    </div>   
+    <div id="nav">
+      <ul id="nav-links">
+        <li><a href="#">学院概况</a></li>
+        <li>
+        	<a href="#">新闻中心</a>
+            <ul class="news-categories">
+              <li><a href="#">通知公告</a></li>
+              <li><a href="#">校园新闻</a></li>
+              <li><a href="#">图片新闻</a></li>
+              <li><a href="#">学术动态</a></li>
+              <li><a href="#">社会新闻</a></li>
+            </ul>
+        </li>
+        <li><a href="#">管理机构</a></li>
+        <li><a href="#">系部设置</a></li>
+        <li><a href="#">教育科研</a></li>
+        <li><a href="#">学生天地</a></li>
+        <li><a href="#">招生就业</a></li>
+        <li><a href="#">人才培养</a></li>
+        <li><a href="#">学术期刊</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="banner">
+    <div id="slides">
+      <ul id="pictures">
+        <li><img src="images/banner-image.jpg" width="860" height="200" alt="博学弘毅，力行至善"/></li>
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div id="image-news">
+      <h3><span>图文热点</span><a href="#">详细 >></a></h3>
+      <ul>
+        <li>
+          <img src="images/image-news-01.jpg" width="400" height="200"/>
+          <p><a title="我院与美国科罗拉州立大学签订合作" href="#">我院与美国科罗拉州立大学签订合作</a></p>
+        </li>
+      </ul>
+    </div>
+    <div id="campus-news-notices">
+       <div class="tab active">
+         <h3><a href="#">校园新闻>></a></h3>
+         <ul id="campus-news">
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+           <li><a href="#">省学位办专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-04-30</span></li>
+         </ul>
+        </div>
+       <div class="tab">      
+         <h3><a href="#">通知公告>></a></h3>
+         <ul id="notices">
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+           <li><a href="#">专家组检查指导我院学士学位授予工作情况</a><span class="date">2015-05-30</span></li>
+         </ul>
+       </div>
+    </div>
+    <div id="tool-links">
+      <ul id="tools">
+        <li><a class="jw" href="#">教务在线</a></li>
+        <li><a class="tug" href="#">图 书 馆</a></li>
+        <li><a class="wlzx" href="#">网络中心</a></li>
+        <li><a class="info" href="#">信息公开</a></li>
+        <li><a class="zsb" href="#">专升本专题</a></li>
+        <li><a class="zs" href="#">招生就业</a></li>
+      </ul>
+      <div id="dropdown-links">
+        <select>
+          <option value="">校内部门网站</option>
+          <option value="">经贸系</option>
+        </select>
+        <select>
+          <option value="">其他院校链接</option>
+          <option value="">太原师范学院</option>
+        </select>
+        <select>
+          <option value="">教育网站链接</option>
+          <option value="">清华大学</option>
+        </select>
+        <select>
+          <option value="">常用网站链接</option>
+          <option value="">网易公开课</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>版权所有 Copyright &copy; 2006 太原学院（原太原大学）地址:中国.山西.太原经济技术开发区大昌南路18号 电话:0351-8778006 （晋）ICP备07001536</p>
+  </div>
+</body>
+</html>

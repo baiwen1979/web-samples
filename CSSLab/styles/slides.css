@@ -1,0 +1,97 @@
+@-webkit-keyframes anim-slides
+{
+	50&
+	{
+		left:-600px;
+	}
+	100%
+	{
+		left:-1200px;
+	}
+}
+
+div.slides
+{
+	position: relative;
+	
+	width:600px;
+	overflow:hidden;
+}
+
+div.slides ul,
+div.slides ol
+{
+	list-style:none;
+}
+
+div.slides ul li, div.slides ol li
+{
+	float: left;	
+}
+
+div.slides ul
+{
+	width: 1800px;
+	position: relative;
+	left:0px;
+	padding: 0;
+	-webkit-animation: anim-slides 6s infinite;
+	-webkit-animation-delay: 2s;
+}
+
+div.slides img
+{
+	width:600px;
+	height:400px;
+	margin:0;
+}
+
+div.slides ol.buttons
+{
+	position:absolute;
+	bottom: 30px;
+	right: 10px;
+}
+
+div.slides ol.buttons li
+{
+	margin-right: 10px;
+}
+
+div.slides ol.buttons li a
+{
+	background: #CCC;
+	text-indent: -9999px;
+	display: block;
+	width:12px;
+	height:12px;
+	border-radius: 12px;
+}
+
+div.slides ol.buttons li a:hover
+{
+	background-color:white;
+}
+
+div.slides > a
+{
+	position:absolute;
+	top:48%;
+	font-size:4em;
+	color:white;
+	font-family:Helvetica;
+	text-decoration:none;
+}
+
+
+div.slides > a.prev
+{
+	left: 10px;
+	
+}
+
+div.slides > a.next
+{
+	right:10px;
+}
+

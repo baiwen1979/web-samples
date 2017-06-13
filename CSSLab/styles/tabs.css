@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* 标签页样式 */
+ul.tabs-no-js
+{
+	list-style: none;
+	padding:0 2em;
+}
+
+ul.tabs-no-js li
+{
+	float:left;
+}
+
+ul.tabs-no-js li a
+{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #666;
+	border: 2px solid transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    border-bottom: none;
+	position: relative;
+	top: 3px;
+}
+
+ul.tabs-no-js li a:hover
+{
+    border-color: darkred;
+	background: darkred;
+	color: white;
+}
+
+ul.tabs-no-js li.active a
+{
+	color: darkred;
+}
+
+ul.tabs-no-js li.active a:hover
+{
+	color: white;
+}
+
+ul.tabs-no-js li.active div,
+ul.tabs-no-js li:hover div
+{
+	display: block;
+}
+
+ul.tabs-no-js
+{
+	height: 200px;
+	position: relative;
+	z-index: 100;
+}
+
+ul.tabs-no-js li div
+{
+	position:absolute;
+	left: 0; 
+	right: 0;	
+	bottom: 0;	
+	top: 60px;
+	
+	border-top: 2px solid darkred;
+	background: #DDD;
+	display: none;
+	z-index: 0;
+}
+
+ul.tabs-no-js li div p 
+{
+	text-align:center;
+	color: darkred;
+	
+	font-size:2em;
+}

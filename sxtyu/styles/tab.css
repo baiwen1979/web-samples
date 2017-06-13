@@ -1,0 +1,29 @@
+#campus-news-notices {
+    height: 210px;
+	position: relative;
+	z-index: 100;
+}
+
+.tab {
+  float: left; 
+}
+
+.tab:hover ul, .tab.active ul {
+    display: block;
+	z-index: 100;
+}
+
+.tab ul {
+    background-color: white;
+	background-image:url(images/menu.jpg); 
+	background-repeat:no-repeat;
+	background-position:top;
+	position:absolute;
+	left: 20px; 
+	right: 20px;	
+	bottom: 0;	
+	top: 25px;
+	display: none;
+	z-index: 0;
+}
+

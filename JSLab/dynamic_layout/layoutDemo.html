@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="styles/layoutDemo.css" rel="stylesheet" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.17.min.js"></script>
+<script type="text/javascript" src="scripts/layoutDemo.js"></script>
+
+<title>可拖放布局演示</title>
+</head>
+
+<body>
+   <div id="header">
+     <fieldset>
+       <legend>布局</legend>
+       <input type="radio" id="Layout1" name="layout" layoutClass="layout-grid-1"/>单列布局
+       <input type="radio" id="layout13" name="layout"  layoutClass="layout-grid-13"/>两列1:3布局
+       <input type="radio" id="layout131" name="layout" checked="checked" layoutClass="layout-grid-131"/>三列1:3:1布局
+     </fieldset>
+     <fieldset>
+       <legend>操作</legend>
+       <input type="button" id="saveLayout" value="保存当前布局" />
+       <input type="button" id="restoreLayout" value="恢复上次保存布局" />
+     </fieldset>
+   </div>
+   <div id="mainContainer">
+     <div id="layoutContainer" class="layout-grid clearfix layout-grid-131">
+       <!-- 最多3列 -->
+       <div id="column01" class="layout-sortable layout-column grid-col-1">
+         <div id="block01" class="layout-block">
+           <h3>模块1</h3>
+           <div>内容</div>
+         </div>
+         <div id="block02" class="layout-block">
+           <h3>模块2</h3>
+           <div>内容</div>
+         </div>
+         <div id="block03" class="layout-block">
+           <h3>模块3</h3>
+           <div>内容</div>
+         </div>
+         <div id="block04" class="layout-block">
+           <h3>模块4</h3>
+           <div>内容</div>
+         </div>
+       </div>
+       <div id="column02" class="layout-sortable layout-column grid-col-2">
+         <div id="block05" class="layout-block">
+           <h3>模块5</h3>
+           <div>内容</div>
+         </div>
+         <div id="block06" class="layout-block">
+           <h3>模块6</h3>
+           <div>内容</div>
+         </div>
+         <div id="block07" class="layout-block">
+           <h3>模块7</h3>
+           <div>内容</div>
+         </div>
+         <div id="block08" class="layout-block">
+           <h3>模块8</h3>
+           <div>内容</div>
+         </div>
+       </div>
+       <div id="column03" class="layout-sortable layout-column grid-col-3">
+         <div id="block09" class="layout-block">
+           <h3>模块9</h3>
+           <div>内容</div>
+         </div>
+         <div id="block10" class="layout-block">
+           <h3>模块10</h3>
+           <div>内容</div>
+         </div>
+         <div id="block11" class="layout-block">
+           <h3>模块11</h3>
+           <div>内容</div>
+         </div>
+         <div id="block12" class="layout-block">
+           <h3>模块12</h3>
+           <div>内容</div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div id="footer">
+      <p>版权所有@2012 太原学院 </p>
+   </div>
+</body>
+</html>

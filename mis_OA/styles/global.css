@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document:global.css */
+
+/* ------reset (重置浏览器的默认样式)---------- */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1.5;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+
+/* ---------- common (通用样式)--------------*/
+body{color:#3D464B;font:12px/1.2 arial,georgia,verdana,helvetica,sans-serif;}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {font-weight:bold;}
+h1,h2{font-size:1.2em;}
+h3,h4{font-size:1.1em;}
+h5,h6{font-size:1em;}
+/*list*/
+ol,ul {list-style:none;}
+/* default links */
+a,a:link {color:#036; text-decoration:none;}
+a:visited {color: #037;}
+a:hover,a:active {color: #069;}
+/* useful classes */
+.hide {display:none !important;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.text_center {text-align:center; }
+.text_hide { text-indent:-5000px; }
+.round_rect {-moz-border-radius:8px;-webkit-border-radius:8px;border-radius: 8px;}
+.round_top {border-radius: 5px 5px 0 0;-moz-border-radius: 5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0;}
+.round_bottom {border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px;}
+.has_shadow {box-shadow:#666 4px 4px 5px;-webkit-box-shadow:#666 4px 4px 5px;-moz-box-shadow:#666 4px 4px 5px;}
+/* Clearfix */
+.clearfix {display: block;}
+.clearfix:after {content:".";display:block; clear:both;visibility:hidden;line-height:0;height:0;}
+/* mask layer for dialog box */
+.mask,.loading {position:absolute;width:100%;height:100%;top:0px;left:0px;}
+.mask{background-color:#999;z-index:1000;filter:alpha(opacity=40);-moz-opacity:0.4;opacity:0.4;}
+/* Loading */
+.loading{z-index:999;}
+.loading span {
+	background:#E5EFF2 url(images/loading.gif) no-repeat center 10px;border:2px solid #09F;
+	display:block;margin:0 auto;padding:50px 10px 10px 10px;color:#333;font-weight:bold;
+	position:relative;text-align:center;top:45%;width:100px;left:112px;}
+/* buttons */
+button,input[type="button"], input[type="submit"] {height:26px;cursor:pointer;}
+a.button, button, input[type="button"], input[type="submit"] {
+	background: url(images/button.png) repeat-x top;border: 1px solid #999;
+	display: inline-block;color: #333 !important;line-height: 22px;
+	padding: 1px 10px;text-decoration:none !important;cursor:pointer;
+	border-radius: 5px;-moz-border-radius:5px;-webkit-border-radius: 5px;}
+a.button:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-position:left -24px;border-color: #555 !important;color:#FFF !important;}
+
+/*--------------icons (图标样式定义) ---------------*/
+/*general icons */
+.g_icon {
+	background-position:left center;background-repeat:no-repeat;
+	height:18px;padding-left:22px;line-height:18px;display:inline-block;
+}
+	.g_icon.home{background-image:url(images/icons/home.png);}
+	.g_icon.menu_panel{background-image:url(images/icons/menu-panel.png);}
+	.g_icon.inbox{background-image:url(images/icons/inbox-color.png);}
+	.g_icon.plan{background-image:url(images/icons/plan-color.png);}
+	.g_icon.notice{background-image:url(images/icons/notice-color.png);}
+	.g_icon.password{background-image:url(images/icons/password-color.png);}
+	.g_icon.log{background-image:url(images/icons/log-color.png);}
+	.g_icon.message{background-image:url(images/icons/msg-black.png);}
+	.g_icon.user{background-image:url(images/icons/user-color.png);}
+	.g_icon.users{background-image:url(images/icons/users-color.png);}
+	.g_icon.user_config{background-image:url(images/icons/user-config-color.png);}
+	.g_icon.logout{background-image:url(images/icons/logout-color.png);}
+	.g_icon.help{background-image:url(images/icons/help-color.png);}
+	.g_icon.telphone{background-image:url(images/icons/telphone-black.png);}
+	.g_icon.vehicle{background-image:url(images/icons/vehicle-black.png);}
+	.g_icon.calendar{background-image:url(images/icons/calendar-color.png);}
+	.g_icon.audit{background-image:url(images/icons/audit-black.png);}
+	.g_icon.attachment{background-image:url(images/icons/attachment-black.png);}
+	.g_icon.task{background-image:url(images/icons/task-color.png);}
+/*operation icons */
+.o_icon {
+	background-position:center center;background-repeat:no-repeat;
+	height:16px;width:16px;display:inline-block; text-indent:-5000px;
+}
+	.o_icon.add{background-image:url(images/icons/add.png);}
+	.o_icon.cancel{background-image:url(images/icons/cancel.png);}
+	.o_icon.copy{background-image:url(images/icons/copy.png);}
+	.o_icon.cross{background-image:url(images/icons/cross.png);}
+	.o_icon.document{background-image:url(images/icons/document.png);}
+	.o_icon.delete{background-image:url(images/icons/delete.png);}
+	.o_icon.design{background-image:url(images/icons/design.png);}
+	.o_icon.edit{background-image:url(images/icons/edit.png);}
+	.o_icon.export{background-image:url(images/icons/export.png);}
+	.o_icon.folder{background-image:url(images/icons/folder.png);}
+	.o_icon.folder_add{background-image:url(images/icons/folder-add.png);}
+	.o_icon.folder_back{background-image:url(images/icons/folder-back.png);}
+	.o_icon.go{background-image:url(images/icons/go.png);}
+	.o_icon.import{background-image:url(images/icons/import.png);}
+	.o_icon.link{background-image:url(images/icons/link.png);}
+	.o_icon.move{background-image:url(images/icons/move.png);}
+	.o_icon.move_down{background-image:url(images/icons/move-down.png);}
+	.o_icon.move_page{background-image:url(images/icons/move-page.png);}
+	.o_icon.move_up{background-image:url(images/icons/move-up.png);}
+	.o_icon.muti_upload{background-image:url(images/icons/muti-upload.png);}
+	.o_icon.preview{background-image:url(images/icons/preview.png);}
+	.o_icon.process{background-image:url(images/icons/process.png);}
+	.o_icon.redo{background-image:url(images/icons/redo.png);}
+	.o_icon.relation{background-image:url(images/icons/relation.png);}
+	.o_icon.remove{background-image:url(images/icons/remove.png);}
+	.o_icon.revert{background-image:url(images/icons/revert.png);}
+	.o_icon.save{background-image:url(images/icons/save.png);}
+	.o_icon.organization{background-image:url(images/icons/sites.png);}
+	.o_icon.tick{background-image:url(images/icons/tick.png);}
+	.o_icon.undo{background-image:url(images/icons/undo.png);}
+	.o_icon.upload{background-image:url(images/icons/upload.png);}
+	.o_icon.version{background-image:url(images/icons/version.png);}
+	.o_icon.view{background-image:url(images/icons/view.png);}
+	.o_icon.warning{background-image:url(images/icons/warning.png);}
+	.o_icon.workflow{background-image:url(images/icons/workflow.png);}
+/**** File icons ****/
+.f_icon {
+	background-position:left center;background-repeat:no-repeat;height:16px;line-height:16px;
+	padding-left:20px;display:inline-block;
+}
+	/* General file */
+	.f_icon.folder{ background-image:url(images/icons/folder.png);/*float:left;*/}
+	.f_icon.document{background-image:url(images/icons/document.png);}
+	.f_icon.file{background-image:url(images/icons/file_extension/file_unknown.png);float:left;}
+	/* Specific file */
+	.f_icon.f_3gp{background-image:url(images/icons/file_extension/file_3gp.png);}
+	.f_icon.f_7z{background-image:url(images/icons/file_extension/file_7z.png);}
+	.f_icon.f_bat{background-image:url(images/icons/file_extension/file_bat.png);}
+	.f_icon.f_bin{background-image:url(images/icons/file_extension/file_bin.png);}
+	.f_icon.f_bmp{background-image:url(images/icons/file_extension/file_bmp.png);}
+	.f_icon.f_cab{background-image:url(images/icons/file_extension/file_cab.png);}
+	.f_icon.f_chm{background-image:url(images/icons/file_extension/file_chm.png);}
+	.f_icon.f_dat{background-image:url(images/icons/file_extension/file_dat.png);}
+	.f_icon.f_dll{background-image:url(images/icons/file_extension/file_dll.png);}
+	.f_icon.f_doc{background-image:url(images/icons/file_extension/file_doc.png);}
+	.f_icon.f_eml{background-image:url(images/icons/file_extension/file_eml.png);}
+	.f_icon.f_exe{background-image:url(images/icons/file_extension/file_exe.png);}
+	.f_icon.f_fla{background-image:url(images/icons/file_extension/file_fla.png);}
+	.f_icon.f_flv{background-image:url(images/icons/file_extension/file_flv.png);}
+	.f_icon.f_gif{background-image:url(images/icons/file_extension/file_gif.png);}
+	.f_icon.f_gz{background-image:url(images/icons/file_extension/file_gz.png);}
+	.f_icon.f_htm{background-image:url(images/icons/file_extension/file_htm.png);}
+	.f_icon.f_html{background-image:url(images/icons/file_extension/file_html.png);}
+	.f_icon.f_iso{background-image:url(images/icons/file_extension/file_iso.png);}
+	.f_icon.f_jar{background-image:url(images/icons/file_extension/file_jar.png);}
+	.f_icon.f_jpeg{background-image:url(images/icons/file_extension/file_jpeg.png);}
+	.f_icon.f_jpg{background-image:url(images/icons/file_extension/file_jpg.png);}
+	.f_icon.f_lnk{background-image:url(images/icons/file_extension/file_lnk.png);}
+	.f_icon.f_log{background-image:url(images/icons/file_extension/file_log.png);}
+	.f_icon.f_mdb{background-image:url(images/icons/file_extension/file_mdb.png);}
+	.f_icon.f_mid{background-image:url(images/icons/file_extension/file_mid.png);}
+	.f_icon.f_mov{background-image:url(images/icons/file_extension/file_mov.png);}
+	.f_icon.f_mp3{background-image:url(images/icons/file_extension/file_mp3.png);}
+	.f_icon.f_mp4{background-image:url(images/icons/file_extension/file_mp4.png);}
+	.f_icon.f_mpeg{background-image:url(images/icons/file_extension/file_mpeg.png);}
+	.f_icon.f_mpg{background-image:url(images/icons/file_extension/file_mpg.png);}
+	.f_icon.f_msi{background-image:url(images/icons/file_extension/file_msi.png);}
+	.f_icon.f_pdf{background-image:url(images/icons/file_extension/file_pdf.png);}
+	.f_icon.f_png{background-image:url(images/icons/file_extension/file_png.png);}
+	.f_icon.f_psd{background-image:url(images/icons/file_extension/file_psd.png);}
+	.f_icon.f_rar{background-image:url(images/icons/file_extension/file_rar.png);}
+	.f_icon.f_rm{background-image:url(images/icons/file_extension/file_rm.png);}
+	.f_icon.f_rmvb{background-image:url(images/icons/file_extension/file_rmvb.png);}
+	.f_icon.f_rtf{background-image:url(images/icons/file_extension/file_rtf.png);}
+	.f_icon.f_swf{background-image:url(images/icons/file_extension/file_swf.png);}
+	.f_icon.f_tgz{background-image:url(images/icons/file_extension/file_tgz.png);}
+	.f_icon.f_ttf{background-image:url(images/icons/file_extension/file_ttf.png);}
+	.f_icon.f_txt{background-image:url(images/icons/file_extension/file_txt.png);}
+	.f_icon.f_wav{background-image:url(images/icons/file_extension/file_wav.png);}
+	.f_icon.f_wma{background-image:url(images/icons/file_extension/file_wma.png);}
+	.f_icon.f_wmv{background-image:url(images/icons/file_extension/file_wmv.png);}
+	.f_icon.f_wps{background-image:url(images/icons/file_extension/file_wps.png);}
+	.f_icon.f_xls{background-image:url(images/icons/file_extension/file_xls.png);}
+	.f_icon.f_xpi{background-image:url(images/icons/file_extension/file_xpi.png);}
+	.f_icon.f_zip{background-image:url(images/icons/file_extension/file_zip.png);}

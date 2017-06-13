@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+body {
+  font: 12px/20px Microsoft YaHei, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 1200px;
+  color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****** general layout class ******/
+.cols-container {
+  display: block;
+}
+
+.cols-container:after {
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "";
+}
+
+.col-left {
+  float: left;
+}
+
+.col-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/****** icons ******/
+.icon80 {
+  display: block;
+  width: 84px;
+  height: 20px;
+  line-height:20px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.icon-chart {
+  padding-left: 40px;
+  background: url(images/icon-chart.png) no-repeat left center;
+}
+
+.icon80.line-chart {
+  background: url(images/line-chart.png) no-repeat center top;
+}
+
+.icon80.bar-chart {
+  background: url(images/bar-chart.png) no-repeat center top;
+}
+
+.icon80.area-chart {
+  background: url(images/area-chart.png) no-repeat center top;
+}
+
+.icon80.pie-chart {
+  background: url(images/pie-chart.png) no-repeat center top;
+}
+
+.icon80.doughnut-chart {
+  background: url(images/doughnut-chart.png) no-repeat center top;
+}
+
+/****** App styles ******/
+header, .title {
+  background: #ddd linear-gradient(#F3F3F3, #E3E3E3);
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+menu {
+  border: 1px solid #CCC;
+  margin: 10px 0;
+  padding: 0;
+  width: 110px;
+}
+
+menu ul {
+  padding: 0 15px;
+  list-style: none;
+  height: 500px;
+}
+
+menu ul li {
+  margin-bottom: 10px;
+}
+
+a.icon80 {
+  border: 1px solid #FFF;
+}
+
+a.icon80:hover {
+  border: 1px solid #DDD;
+}
+
+.proxy {
+  border: 1px dotted red;
+}
+
+
+#charts {
+  width: 1055px;
+  margin: 10px 0 10px 10px;
+  height: 547px;
+  background: #F3F3F3;
+  border: 1px solid #DDD;
+  position: relative;
+  overflow: scroll;
+  padding: 10px;
+}
+
+canvas {
+  background:#FFF;
+  border: 1px solid #CCC;
+  padding: 5px;
+  margin: 5px;
+}
+
+canvas:hover {
+  border: 1px solid #888;
+}
+
+footer {
+  border-top: 1px solid #DDD;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}

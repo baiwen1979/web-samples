@@ -1,0 +1,10 @@
+blurbs-background-color:#ededed
+
+banner-background-color:#0f4db6
+
+footer-background-color:#0f4db6
+
+moreBtn-gradient:#fefefe e5e5e5
+moreBtn-border-color:#cccccc
+default-color:#575757
+blue:#0f4db6

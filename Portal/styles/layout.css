@@ -1,0 +1,169 @@
+﻿html {
+  background: white url(images/html-bg.png) repeat-x;
+}
+
+body {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width:960px;
+  /*border: 1px solid black;*/
+  font: 12px/16px Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+a {
+  color:#666;
+  text-decoration:none;
+}
+
+label {
+  color: #666;
+  text-align:right;
+}
+
+h2 {
+  font-size:14px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+div {
+  min-height:20px;
+  /*border: 1px solid black;*/
+  /*padding: 10px;*/
+}
+
+.columns-container {
+  display: block;
+}
+
+.columns-container:after {
+  content:".";
+  display:block; 
+  clear:both;
+  visibility:hidden;
+  line-height:0;
+  height:0;
+}
+
+
+/*********************布局样式***********************/
+
+#header, #nav, #main-container, #footer {
+  /*background-color: #CCC;*/
+  margin-bottom:10px;
+}
+
+#header a {
+  display: block;
+}
+
+#logo {
+  display: block;
+  width: 400px;
+  height: 74px;
+  padding: 10px;
+  float: left;
+  /*border: 1px solid black;*/
+  /*background-color: #AAA;*/
+}
+
+#contact-info {
+  width: 220px;
+  float: right;
+  height: 60px;
+  margin: 10px 0;
+  /*background-color: #AAA;*/
+}
+
+#main-content {
+  width: 664px;
+  float: left;
+  /*background-color: #AAA;*/
+  padding-bottom: 0;
+}
+#aside {
+  float: right;
+  width: 280px;
+  /*background-color: #AAA;*/
+  position: relative;
+  top:0;
+  padding-bottom: 0;
+}
+
+div.banner, 
+div.content-left, 
+div.content-right, 
+div#aside content-block
+{
+  /*background-color: #888;*/
+  margin-bottom:10px;
+  padding-bottom:0;
+}
+
+div.content-left
+{
+  float: left;
+  width: 250px;
+}
+
+div.content-right
+{
+  float: right;
+  width: 400px;
+}
+
+div.content-block
+{
+  margin-bottom: 10px;
+  /*background-color: #666;*/
+  /*height: 89px;*/
+}
+
+.banner {
+  position: relative;
+}
+
+.banner ul.buttons
+{
+   list-style-type: none;
+   margin:0;
+   position: absolute;
+   right:4px;
+   bottom:2px;
+   left:2px;
+   padding:1px 2px;
+   opacity:0.5;
+   background-color:black;
+}
+
+.banner ul.buttons li
+{
+   float:right;
+   border:none;
+   border-left: 1px solid white;
+   background-color: black;  
+}
+
+.banner ul.buttons a {
+   display:block;
+   color: white;
+   font-size: 12px;
+   text-align: center;
+   line-height: 16px;
+   width:16px;
+   height:16px;
+   text-decoration: none;
+}
+
+.banner ul.buttons a.selected {
+	background-color:darkred;
+}
+
+.banner ul.buttons a:hover {
+   background-color: orange;
+}
+

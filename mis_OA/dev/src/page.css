@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* CSS Document */
+/****** Command *******/
+/*.command {
+	background: url(images/command-bg.png) repeat-x;
+	border: 1px solid #BBB;
+	padding: 8px 5px; 
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+.command td {
+	padding-right: 5px;
+	vertical-align: middle;
+}
+.command #search {
+	float: right;
+}
+*/
+/* File Upload button */
+.file-upload {
+	background: url(images/icons/upload.png) no-repeat;
+	cursor:pointer !important;
+	display: inline-block;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+	width: 16px;
+}
+.file-upload input {
+	cursor:pointer !important;
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE */
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/****** tables ******/
+/* Tabel Container */
+.table-container {
+    margin-bottom:10px;
+}
+.scrollable-table .table-container {
+	overflow:auto;
+}
+.table-container table {
+	border: 1px solid #BBB;
+	clear: both;
+	width: 100%;
+}
+.table-container caption {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Table Head */
+.table-container th {
+	background: #DDD;
+	border: 1px solid #BBB;
+	font-weight: bold;
+	padding: 5px;
+	white-space:nowrap;
+}
+.table-container th select {
+	font-weight: normal;
+}
+
+/* Optinal Selector */
+.table-container th.optional-selector {
+	background: #EEE url(images/arrow.png) no-repeat 23px center;
+	border: 1px solid #BBB;
+	cursor: pointer;
+	padding: 0;
+}
+.table-container th.optional-selector div {
+	position: relative;
+	padding: 5px 15px 5px 5px;
+}
+.table-container th.optional-selector ul {
+	background: #FFF;
+	border: 1px solid #BBB;
+	cursor: default;
+	left: 0;
+	padding: 10px 0;
+	position: absolute;
+	top: 24px;
+}
+.table-container th.optional-selector a {
+	color: #000;
+	display: block;
+	font-weight: normal;
+	padding: 2px 5px;
+	white-space: nowrap;
+}
+
+/* Th Width */
+.table-container th.common {
+	width: 130px;
+}
+.table-container th.action,
+.table-container th.published {
+	text-align: center;
+	width: 30px;
+}
+.table-container th.checkbox {
+	width: 13px;
+}
+.table-container th.draggable {
+	background-position:29px center;
+	padding-left:7px;
+}
+.table-container th.date,
+.table-container th.utccreationdate {
+	width: 90px;
+}
+.table-container th.id {
+	width: 20px;
+}
+.table-container th select {
+	font-weight: normal;
+}
+.table-container th.size {
+	width: 80px;
+}
+.table-container th.status {
+	width: 140px;
+}
+.table-container th.type {
+	width: 40px;
+}
+.table-container th.value {
+	width: 50%;
+}
+
+/* Table Foot */
+.table-container tfoot td {
+	background: #EDEDED;
+	padding: 3px 5px;
+}
+
+/* Table Body */
+.table-container tbody td {
+	border-bottom: 1px solid #DDD;
+	line-height: 16px;
+	padding: 5px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.table-container tbody tr.even td {
+	background: #F9F9F9;
+}
+.table-container tbody tr:hover td {
+	background-color: #FCF5DD;
+}
+.table-container tbody td.action {
+	text-align: center;
+	white-space:nowrap;
+	width: 20px;
+}
+.table-container tbody td.draggable,
+.table-container tbody tr.even td.draggable {
+	background-image:url(images/icons/grippy.png);
+	background-position:2px 5px;
+	background-repeat:no-repeat;
+	cursor:move;
+	padding-left:12px;
+}
+.table-container tbody td.undraggable{
+	padding-left:12px;
+}
+.table-container tbody td a{
+	float:left;
+	margin-right:3px;
+}
+.table-container tbody td.action a{
+	float:none;
+	margin:0;
+}
+.table-container tbody td.type, .table-container tbody td.date, .table-container tbody td.size {
+	color: #666;
+}
+.table-container tbody input[type="checkbox"] {
+	margin-top: 3px;
+}
+.table-container tbody strong {
+	font-weight: bold;
+}
+
+.table-container input.editor {
+	float: left;
+	font-size: 11px;
+	height: 12px;
+}
+
+.table-container .inline-action {
+	float: left;
+	margin-left: 5px;
+}
+
+/* Pagination position */
+.table-container .pagination {
+	float: right;
+	margin-top: 10px;
+	
+}
+/***** Common Form *****/
+.common-form {
+	margin-top: 0px;
+}
+.common-form legend span, .common-form input, .common-form select, .common-form .ui-dropdownchecklist-wrapper, .common-form textarea, .common-form .radio-list {
+	float: left;
+	margin-right: 5px;
+}
+.common-form fieldset {
+	margin: 10px 0;
+}
+.common-form legend {
+	border-bottom: 3px solid #CCC;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.common-form legend.clickable {
+	overflow: hidden;
+}
+.common-form legend.clickable span {
+	background: url(images/arrow1.png) no-repeat left center;
+	cursor: pointer;
+	padding-left: 15px;
+}
+.common-form legend.clickable.active span {
+	background-image: url(images/arrow2.png);
+}
+.common-form table {
+	width: 100%;
+}
+.common-form tr {
+	border-bottom: 1px solid #EEE;
+}
+.common-form tbody > tr > th {
+	padding: 5px;
+	vertical-align: top;
+	width: 170px;
+}
+.common-form td {
+	padding: 5px 0 5px 5px;
+	vertical-align: top;
+}
+.common-form div.datafield {
+	margin-bottom: 5px;
+}
+.common-form tbody.datafield {
+	border-bottom: 3px solid #CCC;
+}
+.common-form .datafield input[type="text"] {
+	width: 200px;
+}
+.common-form p {
+	margin-bottom: 10px;
+}
+.common-form p.left {
+	margin-right: 10px;
+}
+.common-form label {
+	float: left;
+}
+.common-form input[type="text"], .common-form input[type="password"] {
+	width: 300px;
+}
+.common-form input[type="checkbox"], .common-form input[type="radio"] {
+	margin-top: 3px;
+}
+.common-form textarea {
+	width: 500px;
+}
+.common-form .radio-list {
+	line-height: 20px;
+}
+.common-form .radio-list p {
+	margin: 0 0 5px 0;
+}
+.common-form .checkbox-label, .common-form .radio-label, .common-form label.inline {
+	display: inline !important;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.common-form .select-label {
+	display: inline;
+	margin-right: 5px;
+	width: auto;
+}
+
+/* Action icons
+--------------------------------------------------------*/
+.form-action {
+	margin: 2px 5px 0 0;
+}
+.common-form .inline-action {
+	margin-right: 5px;
+}
+
+/* Buttons
+--------------------------------------------------------*/
+p.buttons {
+	background: url(images/command-bg.png) repeat-x;
+	border: 1px solid #DDD;
+	overflow: hidden;
+	margin: 0;
+	padding: 5px 8px;
+	/* Do Rounding */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.common-form button, .common-form input.button {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+.common-form p.buttons button, .common-form p.buttons .button {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Length of form elements*/
+/* Mini */
+.common-form label.mini {
+	width: 44px;
+}
+.common-form input[type="text"].mini, .common-form input[type="password"].mini {
+	width: 40px;
+}
+.common-form select.mini {
+	width: 42px;
+}
+/* Short */
+.common-form label.short {
+	width: 104px;
+}
+.common-form input[type="text"].short, .common-form input[type="password"].short {
+	width: 100px;
+}
+.common-form select.short {
+	width: 102px;
+}
+/* Medium */
+.common-form label.medium {
+	width: 204px;
+}
+.common-form input[type="text"].medium, .common-form input[type="password"].medium {
+	width: 200px;
+}
+.common-form select.medium {
+	width: 204px;
+}
+.common-form textarea.medium {
+	width: 202px;
+}
+/* Long */
+.common-form label.long {
+	width: 304px;
+}
+.common-form input[type="text"].long, .common-form input[type="password"].long {
+	width: 300px;
+}
+.common-form select.long {
+	width: 304px;
+}
+/* Max */
+.common-form textarea.max {
+	height: 400px;
+	width: 99.5%;
+}
+
+/* Form input elements for common data type */
+.common-form input[type='text'].date {
+	background:url(images/icons/date.jpg) no-repeat 82px;
+	height:20px;
+	width:100px;
+	font-size:12px;
+}
+
+.common-form input[type='text'].spin-number {
+	height:16px;
+	width:50px;
+	text-align:right;
+}
+
+.common-form .table-container th.auto-width {
+	width: auto;
+}
+
+/****** common input elements ******/
+label {
+	color: #555;
+	font-weight: bold;
+	line-height: 20px;
+}
+label.required,p.required,span.required {
+	color: #F00;
+	display: block;
+	float: left;
+	line-height: 20px;
+}
+input[type="text"], input[type="password"] {
+	border: 1px solid #CCC;
+	height: 16px;
+	padding: 1px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+	border-color: #39C;
+}
+textarea {
+	border: 1px solid #CCC;
+}
+textarea:focus {
+	border-color: #39C;
+}
+select {
+	border: 1px solid #CCC;
+	height: 20px;
+}
+select:focus {
+	border-color: #39C;
+}
+
+button, input.button, input[type='button'] {
+	background: url(images/button.png) repeat-x left top;
+	border: 1px solid #999;
+	color: #333;
+	cursor: pointer;
+	font-size: 12px;
+	/*height: 26px;*/
+	line-height: 22px;
+	padding: 1px 10px; /* Do Rounding */
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+button:hover, input.button:hover, input[type='button']:hover {
+	background-position: left -24px;
+	border-color: #333;
+	color: #FFF;
+}
+
+/***** Pagination *****/
+.pagination {
+	color: #999;
+	line-height:23px;
+}
+.pagination a {
+	background: #EEE;
+	border: 1px solid #CCC;
+	font-family: "Lucida Grande" , Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	padding: 3px 6px;
+	text-decoration: none; /* Do Rounding */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.pagination a:hover {
+	border-color: #D54321;
+	color: #D54321;
+}
+.pagination a.disabled, .pagination a.current {
+	background: #DFDFDF;
+	border: 1px solid #CCC;
+	color: #333;
+	cursor: default;
+	font-weight: normal;
+}
+

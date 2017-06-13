@@ -1,0 +1,417 @@
+@charset "utf-8";
+/***********************内容样式************************/
+
+/*头部联系电话内容样式*/
+#contact-info p {
+	font-size:14px;
+	font-weight:bold;
+	margin-left:40px;
+	padding-left: 50px;
+	background:transparent url(images/icon-telephone.png) no-repeat left top;
+}
+
+/*导航栏内容样式*/
+#nav ul {
+	list-style-type: none;
+	background-color: #006CB1;
+	background: linear-gradient(#00E0FF, #006CB1);
+	padding: 4px 0;
+	border: 1px solid #0E75BC;
+	margin: 0;
+	height: 32px;
+}
+
+#nav ul li {
+	float: left;
+	margin:0;
+	padding:2px 1px;
+	border-left:1px solid #38D0F7;
+	border-right:1px solid #228AA5;
+}
+
+#nav ul li a {
+	margin:0 4px;
+	line-height:24px;
+	padding:4px 10px;
+	color: yellow;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:none;
+	text-shadow:#333 1px 1px 2px;
+}
+
+#nav ul li a:hover {
+	padding:4px 9px;
+	background: linear-gradient(#D2F2FC, #4FCAEB);
+	border-radius:3px;
+	border: 1px solid #0FF;
+}
+
+#nav ul li:first-child
+{
+    border-left: none;
+}
+
+#nav ul li.last {
+	border-right: none;
+}
+
+#nav ul li a.current {
+	color: white;
+}
+
+/*针对banner内容样式*/
+ul.slides img {
+	height: 200px;
+	width: 660px;
+	display:none;
+	border: 1px solid #0FF;
+}
+
+ul.slides {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+div.content-block {
+	border:1px solid #DDD;
+	background-color:#F8F8F8;
+}
+
+div.content-block > *{
+	margin:10px;
+}
+
+/*正对content-block的内容页样式*/
+div.content-block h2{
+	padding:6px;
+	background-color: #DDD;
+	background: linear-gradient(#EFEFEF, #DDD);
+	border:1px solid #CCC;
+	box-shadow:#DDD 1px 1px 1px 1px;
+	margin: 0;
+}
+
+div.content-block h2 span {
+	padding-left:24px;
+	background: transparent url(images/icon-sprites.png) no-repeat 2px 2px;
+}
+
+div.content-block h2 a.more {
+	float:right;
+	font-size:0.5em;
+	color:#FFF;
+	background-color: #06C;
+	background: #06C linear-gradient(#90D8FF, #0071A7);
+	padding:0px 8px;
+	border: 1px solid #036;
+	border-radius:8px;
+}
+
+div.content-block h2 a.more:hover {
+	color:#F93;
+}
+
+#login p.op-bar {
+	text-align:center;	
+}
+
+/* 会员登录内容块样式*/
+input[type="submit"] {
+	background: linear-gradient(#D2F4F6, #32AED2);
+	padding:4px 15px;
+	color: white;
+	border-radius:5px;
+	font-weight:bold;
+	border: 1px solid #069;
+}
+
+#login label {
+	padding-left: 16px;
+	background: transparent url(images/icon-sprites.png) no-repeat 0px -30px;
+}
+
+#login p {
+	text-align:right;
+}
+
+#login p a {
+	margin: 0 10px;
+}
+
+div.content-block ul {
+	padding-left:0;
+	list-style-position:inside;
+}
+
+div.content-block ul li {
+	border-bottom:1px dashed #999;
+	margin-bottom:8px;
+}
+
+div.content-left div.content-block ul li a[title] {
+	display:inline-block;
+	width:13em;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	height:1.2em;
+	margin-right: 0;
+	white-space: nowrap;
+}
+
+div.content-block ul li date {
+	float:right;
+	color:#999;
+}
+
+div.content-block ul li a.detail {
+	float:right;
+	color:#F60;
+}
+
+/*会员推荐专有样式*/
+div#vips {
+	background-color:#FFF;
+}
+
+div#vips ul{	
+	padding-left:10px;
+	padding-right:10px;
+	
+}
+
+div#vips ul li {
+	border-bottom:none;
+}
+
+div.content-right div.content-block div,
+#aside div.content-block div {
+	padding:0 10px;
+}
+
+div.content-right div.content-block div h3 {
+	border-bottom:1px solid #999;
+	padding: 4px 2px;
+	color:#06C;
+}
+
+div.content-right div.content-block div div {
+	padding:0;
+}
+
+div.content-right div.content-block div img,
+#aside div.content-block div img
+{
+	width:120px;
+	height:80px;
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding:3px;
+	border:1px solid #DEDEDE;
+}
+
+div.content-right div.content-block div p,
+#aside div.content-block div p
+{
+	color:#06F;
+	text-indent:2em;
+	line-height:1.8em;
+}
+
+div.content-right div.content-block div p a,
+#aside div.content-block div p a
+{
+	color:#C00;
+}
+
+div.content-right div.content-block div ul,
+#aside div.content-block div ul {
+	clear:both;
+	padding:2px 20px;
+}
+#aside div.content-block div {
+	padding:0;
+}
+
+div.content-right div.content-block div ul li,
+#aside div.content-block div ul li{
+	border-bottom:none;
+}
+
+div.content-right div.content-block div h3 a,
+#aside div.content-block div h3 a{
+	float:right;
+}
+
+div.content-right div.content-block > ul {
+	list-style-type:none;
+	float:left;
+	width:180px;
+	margin-right:0;
+}
+
+div.content-right div.content-block > ul h3 {
+	text-align:center;
+	width:100px;
+	float:left;
+}
+
+div.content-right div.content-block > ul li{
+	border:none;
+	
+}
+
+div.content-right div.content-block > ul li p img {
+	margin:5px;
+	vertical-align:middle;
+	border-radius:10px;
+}
+
+div.content-right div.content-block > ul li p,
+div.content-right div.content-block > ul li h3 {
+	margin:0;
+}
+
+div.content-right div.content-block > ul li h3 a {
+	color:#06F;
+}
+div.content-right div.content-block > ul li p {
+	color:#666;
+	height:70px;
+}
+div.content-right div.content-block > ul li p span {
+	display:block;
+	margin-top:10%;
+	float:right;
+	width:75px;
+}
+
+div.content-right div.content-block > ul.gallery {
+	float:none;
+	width:auto;
+	margin:10px;
+}
+
+div.content-right div.content-block > ul.gallery img {
+	display:block;
+	margin:5px auto;
+	border:1px solid #DDD;
+	padding:4px;
+	
+}
+
+div.content-right div.content-block > ul.gallery li {
+	float:left;
+	width:33%;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+div.content-right div.content-block > ul.gallery a {
+	margin-top:1px;
+	padding:4px 15px;
+	background-color:#09F;
+	border-radius:10px;
+	color:#FFF;
+	display:inline-block;
+}
+
+div.content-right div.content-block > ul.gallery a:hover {
+	background-color:#F60;
+}
+
+/*侧栏样式定义*/
+#aside div.content-block h3 {
+	color:#06F;
+	border-bottom:1px solid #CCC;
+	padding-bottom:4px;
+}
+
+#aside div.content-block h3:before {
+	content: "";
+	width:18px;
+	height:14px;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:1em;
+	background:transparent url(images/icon-sprites.png) no-repeat 0px -72px;
+}
+
+#aside div.content-block ul {
+	padding-left:10px;
+}
+
+#aside div.content-block ul li {
+	padding-bottom:3px;
+	border-bottom:1px dotted #CCC;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+#aside div.content-block img.ad-banner {
+	box-shadow: 1px 2px 2px 1px #CCC;
+	margin-bottom:10px;
+	width:255px;
+	height:82px;
+}
+
+#aside div.content-block > ul
+{
+	padding:1px 0;
+}
+#aside div.content-block > ul li {
+	padding-bottom:5px;
+	border-bottom:none;
+}
+
+#links h2 {
+	line-height:1.5em;
+	padding:4px;
+	border-bottom:1px solid #CCC;
+}
+
+#links h2 span {
+	line-height:20px;
+	padding:5px 10px;
+	border-bottom: 2px solid #09F;
+}
+
+#links h2 span:before {
+	content:"";
+	display:inline-block;
+	text-indent:100%;
+	overflow:hidden;
+	width:25px;
+	height:16px;
+	background:url(images/icon-sprites.png) no-repeat 2px 4px;
+}
+
+#links {
+	clear:both;
+}
+
+#links p {
+	line-height:2em;
+}
+
+#links a {
+	margin:2px 8px;
+}
+
+#footer {
+	padding:10px;
+	background-color: #03F;
+	background:#03F linear-gradient(#00B2F0, #005BAE);
+}
+
+#footer a {
+	color:#FFF;
+}
+
+#footer p {
+	text-align:center;
+	color:#FFF;
+}

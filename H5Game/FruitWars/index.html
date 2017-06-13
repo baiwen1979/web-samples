@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Wars - 水果大战</title>
+  <link rel="stylesheet" href="styles/fonts.css" media="screen">
+  <link rel="stylesheet" href="styles/game.css" media="screen">
+</head>
+<body>
+  <!-- 游戏容器-->
+  <div id="game-container">
+    <!-- 游戏画布 -->
+    <canvas id="game-canvas" width="640" height="480" class="game-layer">
+	  <p>您的浏览器不支持HTML5 Canvas!</p>
+	</canvas>
+	<!-- 计分板 -->
+	<div id="score-screen" class="game-layer">
+	  <a href="#" id="toggle-music" class="icon-s sound-on">声音[开/关]</a>
+	  <a href="#" id="restart-level" class="icon-s prev"><<</a>
+	  <span id="score">分数:0 </span>
+	</div>
+	<!-- 游戏开始画面 -->
+	<div id="game-start-screen" class="game-layer">
+	  <div class="game-menu">
+	    <h3>水果大战</h3>
+	    <a href="#" id="play-game" class="button play">开始游戏</a>
+	    <a href="#" id="settings" class="button settings">更改设置</a>
+	  </div>
+	</div>
+	<!-- 关卡选择界面 -->
+	<div id="level-selection-screen" class="game-layer">
+	  <div class="game-menu">
+	    <h3>请选择关卡</h3>
+		<div id="level-list"></div>
+	  </div>
+	</div>
+	<!-- 加载界面 -->
+	<div id="loading-screen" class="game-layer">
+	  <div id="loading-message"></div>
+	</div>
+	<!-- 结束画面 -->
+	<div id="ending-screen" class="game-layer">
+	  <div class="menu">
+	    <h3 id="ending-message">关卡已结束</h3>
+		<p><a href="#" id="restart-current-level" class="button restart">重玩本关</a></p>
+		<p><a href="#" id="play-next-level" class="button next">开始下一关</a></p>
+		<p><a href="#" id="show-level-screen" class="button return">返回</a></p>
+	  </div>
+	</div>
+  </div>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* CSS Document */
+.tab {
+	float: left;
+	margin-right:5px;
+}
+
+.tab.active ul {
+	display: block;
+}
+
+.tab:hover ul {
+	display: block;
+}
+
+.tab ul {
+	background-color: white;
+	background-image:url(images/menu.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	display: none;
+	
+}

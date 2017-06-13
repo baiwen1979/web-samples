@@ -1,0 +1,20 @@
+/* CSS Document */
+#nav-links > li:hover ul {
+	display: block;
+}
+
+#nav-links > li {
+	position: relative;
+}
+
+#nav-links ul {
+	position: absolute;
+	background: #003e89;
+	z-index: 100;
+}
+
+#nav-links ul a:hover {
+	background-color: red;
+	background-image: none;
+}
+

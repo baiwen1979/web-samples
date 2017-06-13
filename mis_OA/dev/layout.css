@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document: layout.css*/
+
+/*layout (主页面布局) */
+html,body {
+	overflow: hidden;
+	height:100%;
+}
+*html {
+	_padding: 75px 0 34px; /*IE6 hack*/ 
+}
+
+#hd {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 66px;
+	min-width:700px;
+}
+*#hd {
+	_height: 71px; /* hack for IE6 */ 
+}
+
+
+#bd {
+	position:absolute;
+	z-index: 1;
+	top: 70px;
+	left: 0;
+	right:0;
+	bottom: 34px;
+	min-width:700px;
+	min-height:100px;
+}
+*#bd {
+	_position:relative; /*IE6 hacks*/
+	_top: auto;
+	_bottom: auto;
+	_height: 100%;
+}
+
+#main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 200px;
+	overflow: auto;
+}
+
+#main #content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+*#main {
+	_position: static; /*IE6 hacks*/
+	_height: 100%;
+	_margin-left: 200px;
+}
+*#main #content {
+	_position: relative; /*IE6 hacks*/
+	_overflow: auto;
+	_width: 100%;
+	_height: 100%;
+}
+
+#side {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow:auto;
+    overflow-x:hidden;
+	float:left;
+	width:200px;
+}
+*#side {
+	_height: 100%; /* hack for IE6 */
+}
+
+#ft {
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 33px;
+	min-width:700px;
+}
+

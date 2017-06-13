@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	padding:0;
+	margin:0;
+}
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+
+/* Clearfix */
+.clearfix {display: block;}
+.clearfix:after {content:".";display:block; clear:both;visibility:hidden;line-height:0;height:0;}
+.clear {clear:both;}
+
+#header {
+	background:#CCC;
+	height:50px;
+	margin:0 0 10px 0;
+	padding:10px;
+	border-bottom:1px solid #333;
+}
+
+#header fieldset {
+	display:inline;
+	height:30px;
+}
+
+.layout-grid {
+	width:1000px;
+	margin:0 auto;
+}
+
+.layout-column {
+	float:left;
+	min-height:100px;
+	background:#EEE;
+}
+
+.layout-block {
+	min-height:100px;
+	background-color:#DDD;
+	border:1px solid #999;
+	padding:5px;
+	margin:10px;
+}
+.layout-block h3 {
+	background-color:#039;
+	color:#FFF;
+	padding:5px;
+	margin:0;
+	cursor:move;
+}
+
+.highlight {
+	height:100px;
+	margin:10px;
+	border:1px dashed #F00;
+}
+
+#footer {
+	padding:10px;
+	border-top:1px solid #999;
+}
+
+#footer p{
+	text-align:center;
+}
+
+
+/**以下定义不同个列及其宽度比例的布局网格***/
+/*单列布局*/
+.layout-grid-1 .grid-col-1 {
+	width:960px;
+}
+.layout-grid-1 .grid-col-2, .layout-grid-1 .grid-col-3 {
+	display:none;
+}
+
+/*两列1：3布局*/
+.layout-grid-13 .grid-col-1 {
+	width:240px;
+	margin-right:10px;
+}
+.layout-grid-13 .grid-col-2 {
+	width:720px;
+}
+
+.layout-grid-13 .grid-col-3 {
+	display:none;
+}
+/*三列1:3:1布局*/
+.layout-grid-131 .grid-col-1{
+	width:180px;
+	margin-right:10px;
+}
+
+.layout-grid-131 .grid-col-2{
+	width:600px;
+	margin-right:10px;
+}
+
+.layout-grid-131 .grid-col-3{
+	width:180px;
+}
+
+

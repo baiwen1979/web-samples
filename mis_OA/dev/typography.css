@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 主页面main.jsp/main.html样式定义 */
+#hd {
+	background: #72ACDA url(images/hd_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#C1EBEF,#72ACDA);
+	background: -webkit-gradient(linear,center top,center bottom,from(#C1EBEF),to(#72ACDA));
+	border-bottom: 4px solid #069;
+	border-top: 1px solid #FFF;
+	color:#000;
+}
+
+#hd .logo {
+	margin:10px 0 0 8px;
+	width:320px;
+	float:left;
+}
+
+.quick_links {
+	float:right;
+	margin-top:26px;
+}
+
+.quick_links ul {
+	list-style:none;
+}
+
+.quick_links ul li {
+	display:inline;
+	border-right: 1px solid #036;
+	line-height: 14px;
+	margin-right: 6px;
+	padding: 0 6px 0 0;
+	float:left;
+}
+
+.quick_links ul li.last {
+	border-right:none;
+}
+
+#side {
+	background: #E4ECF5 url(images/side-bg.png) repeat-x top;
+	border-top: #FFF;
+	border-right: 1px solid #069;
+}
+
+#navHd {
+	border-bottom: 1px solid #FFF;
+	margin: 5px 10px;
+}
+
+#navHd h2 {
+	padding-top: 15px; padding-bottom: 10px;
+	border-bottom: 1px solid #09F;
+}
+
+#navHd h2 a { font-weight:normal; font-size:12px}
+
+#navigation {
+	margin:5px 0;
+}
+
+#menu h3 {
+	display:block;
+	padding:5px 10px 2px 15px;
+	background: url(images/menu-title-up.png) no-repeat 10px 10px;
+	border-bottom: 1px solid #C3E3EE;
+}
+
+#menu li.expanded h3 {
+	background: url(images/menu-title-down.png) no-repeat 10px 10px;
+}
+
+#menu a {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 15px;
+	white-space: nowrap;
+}
+
+#menu li.active,#menu li ul li.active:hover{
+	background:#72ACDA url(images/menu-active.png) repeat-x top;
+	border-top:1px solid #09F;
+	border-bottom:1px solid #FFF;
+}
+
+#menu li.active a {
+	color:#FFF;
+}
+
+#menu li ul li:hover{
+	background:#D1E8F0;
+}
+
+#menu li ul li {
+	padding-left:16px;
+}
+
+#contentFrame {
+	background:#FFF url(images/bd-bg.png) repeat-x top;
+}
+
+#ft {
+	background:#B9E0ED url(images/ft_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#F4F4F4,#B9E0ED);
+	background: -webkit-gradient(linear,center top,center bottom,from(#F4F4F4),to(#B9E0ED));
+	border-top: 1px solid #999;
+}

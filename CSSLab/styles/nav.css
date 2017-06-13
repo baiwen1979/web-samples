@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* 导航条样式 */
+
+ul.dropdown-menu, ul.dropdown-menu ul
+{
+	list-style: none;
+}
+
+ul.dropdown-menu
+{
+	background: darkred linear-gradient(red, darkred) no-repeat;
+	padding: 4px 20px 0px;
+	border-radius: 10px;
+}
+
+ul.dropdown-menu a
+{
+	color: black;
+	text-decoration: none;
+	font-size:1.2em;
+}
+
+ul.dropdown-menu > li > a
+{
+	color: white;
+	font-weight: bold;
+	display:block;
+	width:6em;
+	text-align:center;
+	padding: 10px 0;
+	border-bottom: 5px solid transparent;
+}
+
+ul.dropdown-menu > li:hover > a
+{
+	background:#EEE;
+	color: black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+ul.dropdown-menu > li.current > a
+{
+	color: yellow;
+}
+
+ul.dropdown-menu > li.current > a:hover
+{
+	color: blue;
+}
+
+ul.dropdown-menu > li
+{
+	float: left;
+	position: relative;	
+}
+
+ul.dropdown-menu > li > ul > li
+{
+	position: relative;
+}
+
+ul.dropdown-menu > li > ul > li > ul
+{
+	left: 12em;
+	top: 0;
+	width: 14em;
+	background:#EEE;
+	padding:0;
+	border: 1px solid darkred;
+}
+
+ul.dropdown-menu > li > ul
+{
+	border: 1px solid darkred;
+	border-top: none;
+	left: -1px;
+	padding:10px 0 0 0;
+	width: 12em;
+	background: #EEE;
+	
+}
+
+ul.dropdown-menu > li > ul li a
+{
+	display: block;
+	padding: 15px;
+}
+
+ul.dropdown-menu > li:hover > ul
+{
+	opacity: 1.0;
+	-webkit-transform: scale(1,1);
+}
+
+ul.dropdown-menu > li > ul > li > ul
+{
+	-webkit-transform: scale(0,1);
+	-webkit-transform-origin: left;
+}
+
+ul.dropdown-menu > li > ul > li:hover > ul
+{
+	opacity: 1.0;
+	-webkit-transform: scale(1,1)
+}
+
+ul.dropdown-menu > li > ul li:hover > a
+{
+	background: darkred;
+	color: white;
+}
+
+ul.dropdown-menu ul
+{
+	position: absolute;
+	z-index:200;
+	opacity:0;
+	-webkit-transform: scale(1,0);
+	-webkit-transform-origin:top;
+}

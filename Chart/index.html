@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Charts</title>
+  <!--Using easyui styles-->
+  <link rel="stylesheet" type="text/css" href="easyui/themes/gray/easyui.css">
+  <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="easyui/themes/color.css">
+  <!--App scripts-->
+  <link rel="stylesheet" type="text/css" href="styles/chart3d.css">
+</head>
+<body>
+  <header class="cols-container">
+    <h1 class="col-left">
+	  <span class="icon-chart">动态数据图表展示</span>  
+	</h1>
+	<a id="update-button" class="easyui-linkbutton col-right" href="#" data-options="iconCls:'icon-reload'">更新图表</a>
+  </header>
+  <div class="cols-container">
+    <menu class="col-left">
+	  <h2 class="title">图表种类</h2>
+	  <ul id="chart-categories">
+	    <li><a id="line" class="draggable icon80 line-chart" href="#">曲线图</a></li>
+		<li><a id="bar" class="draggable icon80 bar-chart" href="#">柱状图</a></li>
+		<li><a id="area" class="draggable icon80 area-chart" href="#">极地区域图</a></li>
+		<li><a id="pie" class="draggable icon80 pie-chart" href="#">饼图</a></li>
+		<li><a id="doughnut" class="draggable icon80 doughnut-chart" href="#">环形图</a></li>
+	  </ul>
+    </menu>
+	<section id="charts" class="col-left">
+	</section>
+  </div>
+  <footer><p>版权所有 &copy;2015太原学院计算机工程系</p></footer>
+<!--Using easyui framework -->
+<script src="easyui/jquery.min.js"></script>
+<script src="easyui/jquery.easyui.min.js"></script>
+<script src="easyui/easyloader.js"></script>
+<!--App scripts-->
+<script src="scripts/Chart.min.js"></script>
+<script src="scripts/dataProvider.js"></script>
+<script src="scripts/chart3d.js"></script>
+</body>
+</html>

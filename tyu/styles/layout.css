@@ -1,0 +1,251 @@
+/* CSS Document */
+
+/******* 页头 ********/
+/*校徽*/
+#logo {
+	margin-top: 24px;
+	float: left;
+}
+/*搜索框*/
+#search-box {
+	margin-top: 8px;
+	float: right;
+}
+
+#search-box label {
+	color: #913737;
+	font-weight: bold;
+}
+
+#search-box input[type='submit'] {
+	background-image:url(images/go.jpg);
+	background-position:center center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	padding: 3px 13px;
+	border: none;
+}
+/*导航条*/
+#navigation {
+	float: right;
+	background-color: #003e89;
+	width:723px;
+	margin-top: 16px;
+	border-radius: 10px;
+	padding-left:15px;
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li {
+	display:inline-block;
+}
+
+#navigation ul ul {
+	display: none;
+}
+
+#navigation a {
+	color: #FFF;
+	display:inline-block;
+	padding: 9px 16px 9px 9px;
+}
+
+#navigation a:hover {
+	background-image:url(images/nav-hover-bg.jpg);
+}
+
+/******** 横幅 *********/
+#banner {
+	background-color: #213b75;
+	clear: both;
+	padding-bottom: 20px;
+	overflow:hidden;
+	border-radius: 10px;
+}
+
+#banner ul {
+	margin: 0;
+	padding: 0;
+	width: 2895px;
+	list-style: none;
+}
+
+#banner li {
+	float: left;
+}
+
+#banner img {
+	width: 965px;
+	height: 200px;
+}
+/********* 主内容 ********/
+/*图文热点*/
+#picture-news {
+	float: left;
+	width: 190px;
+	padding:5px;
+	margin:0 15px;	
+}
+
+#picture-news h4 {
+	background-image:url(images/hx.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	font-size:1.2em;
+	padding:5px 0;
+	margin: 10px 0;
+	color: #213975;
+}
+
+#picture-news h4 span {
+	background-image:url(images/new_1.jpg);
+	background-repeat:no-repeat;
+	padding-left: 10px;
+	background-position:left center;
+}
+
+#picture-news h4 a {
+	float:right;
+	font-weight:normal;
+	font-size:12px;
+}
+
+#picture-news img {
+	width: 180px;
+	margin-left:5px;
+	height: 120px;
+}
+
+#picture-news p {
+	text-align:center;
+	margin:5px 0;
+}
+
+#picture-news p a {
+	font-weight:bold;
+	color: #039;
+	height: 13px;
+	display:inline-block;
+	overflow:hidden;
+}
+
+/*校园新闻和通知公告*/
+#campus-news-notices {
+	float:left;	
+	width: 449px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	margin-top: 15px;
+	position: relative;
+	height: 195px;
+	margin-bottom:10px;
+}
+
+#campus-news-notices h4 {
+	margin:0;
+}
+#campus-news-notices h4 a {
+	background-image:url(images/main_menu_2.jpg);
+	background-repeat: no-repeat;
+	color: #039;
+	display: inline-block;
+	padding: 7px 10px 3px 10px;
+	font-weight:normal;
+}
+
+#campus-news-notices h4 a:hover {
+	background-image:url(images/main_menu_1.jpg);
+	color:white;
+}
+
+#campus-news-notices ul {
+	list-style-image:url(images/news_sj.jpg);
+	padding: 10px 0;
+	list-style-position:inside;
+	margin: 0;
+}
+
+#campus-news-notices li {
+	border-bottom: 1px dashed #CCC;
+	padding:5px 0;
+}
+
+#campus-news-notices li a {
+	color:#039;
+}
+
+#campus-news-notices li span {
+	float: right;
+	color: #888;
+}
+
+/*网站服务*/
+#services {
+	float: right;
+	width: 220px;
+	padding: 10px;
+}
+
+#tools {
+	list-style:none;
+	padding: 0;
+	margin: 2px 0;
+}
+
+#tools li {
+	display:inline-block;
+}
+
+#tools a {
+	display:inline-block;
+	width: 69px;
+	height: 72px;
+	/*background-image:url(images/0001_01.gif);*/
+	text-indent: -9999px;
+	background-position:center center;
+}
+
+#links select {
+	margin-top: 4px;
+}
+
+a.icon-1 {
+	background-image:url(images/0001_01.gif);
+}
+
+a.icon-2 {
+	background-image:url(images/0001_02.gif);
+}
+a.icon-3 {
+	background-image:url(images/0001_03.gif);
+}
+a.icon-4 {
+	background-image:url(images/0001_04.gif);
+}
+a.icon-5 {
+	background-image:url(images/0001_05.gif);
+}
+a.icon-6 {
+	background-image:url(images/0001_06.gif);
+}
+
+/********* 页脚 *********/
+#footer {
+	clear:both;
+	background-color:#213975;
+	color: #fff;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+#footer p {
+	margin: 5px;
+	text-align: center;
+}

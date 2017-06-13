@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+h1
+{
+	text-align: center;
+}
+
+h2
+{
+	border-left: 20px solid darkred;
+	border-bottom: 2px solid darkred;
+}
+

@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(images/login-bg-lightgray.png) repeat-x top #F6F6F6;
+}
+
+.login_wrapper {
+	position:absolute;
+	left:50%;
+	top:40%;
+	width:548px;
+	height:292px;
+	margin-left:-274px;
+	margin-top:-146px;
+	background:#CCF url(images/login-form-bg.png) no-repeat top;
+	border:1px solid #FFF;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	behavior: url(styles/PIE.htc); /* for IEs that don't support border-radious*/
+}
+
+#loginForm {
+	position:absolute;
+	right:20px;
+	bottom:24px;
+	z-index: 3;
+}
+
+#loginForm td {
+	height:45px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+}
+
+#loginForm input{
+	height:28px;
+	line-height:28px;
+	width:200px;
+	background-color:#404040;
+	color:#FFF;
+	padding:2px 5px;
+	border:1px solid #FFF;
+	font-size:1.5em;
+	outline:none;
+}
+
+#loginForm input:focus {
+    background:#036;
+}
+
+#loginForm input.button {
+	background:#CCC url(images/button-bg.png) repeat-x top;
+	height:36px;
+	width:95px;
+	border:1px solid #555;
+	color:#444;
+	font-size:14px;
+	cursor:pointer;
+}
+
+#loginForm input.button:hover {
+	background:url(images/button-bg-hover.png) repeat-x top;
+    color:#444;
+}

@@ -1,0 +1,90 @@
+﻿/*****************style definations for ie8 browsers and earlier*****************/
+
+/***** for all IE8- *****/
+html .round_rect, html .round_top, html .round_bottom, html .has_shadow {behavior:url(styles/PIE.htc);}
+a.button, input.button {
+	background: url(images/button.png) repeat-x top;border: 1px solid #999;
+	display: inline-block;color: #333 !important;line-height: 22px;
+	padding: 1px 10px;text-decoration:none !important;
+}
+a.button:hover {
+    background-position:left -24px;border-color: #555 !important;color:#FFF !important;
+}
+.search-form {
+    border-radius:5px;
+    behavior:url(styles/PIE.htc);
+}
+.common-form input {
+    border: 1px solid #CCC;
+}
+.common-form input.button {
+    border:1px solid #999;
+    height:24px;
+}
+.ui-dialog {
+    border-top:3px solid #ABC;
+    border-left:3px solid #ABC; 
+    border-right:6px solid #9AB;
+    border-bottom:6px solid #9AB;
+}
+
+/***** for IE6 *****/
+/*global*/
+* html .clearfix {height: 1%;}
+* html a.button, * html .g_icon, * html .o_icon, * html .f_icon {_display:inline;}
+/*frame page*/
+* html .pagination {
+	_position:relative;
+	_top:-25px;
+	_margin-bottom:-25px;
+	_right:10px;
+}
+* html .search-panel {
+	_top: -25px;
+	_margin-bottom: -25px;
+	_z-index:4;
+}
+* html a.advanced {
+	_margin-top:6px;
+	_display:inline;
+}
+* html .search-form input {
+    _border:none;
+	_margin:0px 5px 0 0;
+}
+* html .search-form .button {
+    _text-indent:-9999px;
+	_background: url(images/icons/search-white-bg.png) no-repeat center center;
+	_cursor: pointer;
+	_height: 20px;
+	_width: 20px;
+}
+* html .more-search {
+	_z-index:10;
+	_width:260px; /* must specify the width in IE*/
+}
+* html .common-form input.date {
+	_background:url(images/icons/calendar-color.png) no-repeat 134px 1px;
+	_width:150px;	
+}
+* html .loading span {
+    _position:relative;
+    _top:240px;
+}
+
+/***** for IE7 *****/
+/*global*/
+* + html .clearfix {zoom:1 !important;}
+* + html a.button, * + html .g_icon, * + html .o_icon, * + html .f_icon {*display:inline;}
+/*frame page*/
+* + html .pagination {
+    *position:relative;
+    *top:-25px;
+    *margin-bottom:-25px;
+    *right:10px;
+}
+* + html .search-panel {
+    *top: -25px;
+    *margin-bottom: -25px;
+    *z-index:4;
+}

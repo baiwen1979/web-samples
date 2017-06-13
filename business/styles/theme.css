@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+/*************** page background ***************/
+html {
+	background:#0E0E0E url(images/html-bg.png) no-repeat center top;
+}
+
+body {
+	background-color:#FFF;
+	
+}
+
+.icon-16 {
+	display:inline-block;
+	width:18px;
+	height:16px;
+	text-indent:100%;
+	overflow:hidden;
+	background:url(images/sprites.png) no-repeat left top;
+}
+
+.icon-16.in {
+	background-position: -24px 0;
+}
+
+.icon-16.f {
+	background-position: -48px 0;
+}
+
+.icon-save {
+	background:url(images/icon-sprite.png) no-repeat left 0px;
+}
+
+.icon-always {
+	background:url(images/icon-sprite.png) no-repeat left -90px;
+}
+
+.icon-contact {
+	background:url(images/icon-sprite.png) no-repeat left -175px;
+}
+
+/*************** logo *********************/
+h1.logo a {
+	font-size:16px;
+	font-weight:normal;
+    background:transparent url(images/sprites.png) no-repeat 0 -48px;
+}
+
+/*************** contact ******************/
+#contact{
+	background:transparent url(images/contact-bg.png) no-repeat;
+	text-indent:100%;
+	overflow:hidden;
+}
+
+/*************** navigation ********************/
+nav ul.nav-list li a {
+	font-weight:bold;
+}
+
+nav ul.nav-list li a:hover, 
+nav ul.nav-list li a.current {
+	background:#039 url(images/nav-button-bg.png) repeat-x;
+	color:#FFF;	
+	border-color: #00224b;	
+}
+
+/***************** banner **********************/
+#banner .outer-box {
+	background-image: url(images/out-box-bg.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	/*opacity:0.2;*/
+}
+
+#banner .outer-box .inner-box {
+	background-color: rgba(255,255,255,0.2);
+}
+#banner {
+	background-color: #06C;
+	background-image: url(images/banner-bg.png);
+	background-repeat: no-repeat;
+}
+#slides li a img {
+	border: 1px solid #FFF;
+}
+
+#title h2 {
+	font-size: 2.3em;
+	font-weight:normal;
+	text-shadow:#333 2px 2px 5px;
+	color: #FFF;
+	line-height:150%;
+	margin-bottom: 36px;
+}
+
+#title h2 em {
+	font-size:1.1em;
+	font-style:normal;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+a.button {
+	padding:6px 10px;
+	background:linear-gradient(#fefefe, #e5e5e5);
+	border:1px solid #CCC;
+	border-radius: 5px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.big-button {
+	background-image: url(images/button-bg.png);
+	background-repeat: repeat-x;
+}
+
+a.big-button {
+	font-size: 1.5em;
+	padding:15px 20px;
+	height:60px;
+	text-transform: uppercase;
+	color: #b90016;
+	width: 260px;
+	border-radius: 8px;
+	font-weight:bold;
+}
+
+a.big-button:hover {
+	color:#000;
+}
+
+a.big-button:after {
+	margin-left:18px;
+	display:inline-block;
+	content:"";
+	background:url(images/sprites.png) no-repeat -177px 0;
+	width:20px;
+	height:15px;
+}
+
+#banner .outer-box .inner-box h3 {
+	font-size:1.5em;
+	color:#FFF;
+}
+
+#buttons li a {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
+	background:#036 url(images/sprites.png) no-repeat -90px 0;
+	text-indent: 100%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#buttons li a.current,
+#buttons li a:hover {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
+	background: #FFF url(images/sprites.png) no-repeat -73px 0;
+}
+
+#top {
+	background-color:#ededed;
+	border-bottom:2px solid #CCC;
+}
+
+#top div {
+	line-height:1.4em;
+}
+
+#main p {
+	line-height:2em;
+}
+
+#main ul {
+	list-style:url(images/li-marker.png) inside none;
+}
+
+#main ul li {
+	border-bottom:1px dashed #DDD;
+}
+
+#main ul li a {
+	color:#0f4db6;
+}
+
+#main {
+	border-bottom:2px solid #CCC;
+}
+
+#bottom,footer {
+	background-color:#ededed;
+	
+}
+
+
+#bottom {
+	border-bottom:1px solid #BBB;
+}
+
+#bottom p {
+	line-height:2em;
+}
+
+#bottom p em {
+	color:#000;
+	font-weight:bold;
+	font-style:normal;
+}
+
+#blog P {
+	line-height:1.5em;
+}
+
+#blog h4 {
+	line-height:1.2em;
+	color:#0f4db6;
+}
+
+footer {
+	border-top:1px solid #FFF;
+}
+
+footer p.links:after {
+	background:url(images/sprites.png) no-repeat 0px -24px;
+	
+}

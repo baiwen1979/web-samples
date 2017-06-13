@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="scripts/jquery.hoverSlide-1.0.js"></script>
+<title>JQuery Plugin Test</title>
+</head>
+<style>
+.box {
+	width:250px;
+	height:200px;
+	background:#BBB;
+	margin:0px;
+	display:block;
+	font-size:50px;
+	text-align:center;
+	line-height:200px;
+	float:left;
+	border:1px solid #CCC;
+}
+.box p {
+	margin:0;
+}
+
+.detail {
+	width:250px;
+	height:200px;
+	background:#F00;
+	margin:0;
+}
+</style>
+<body>
+  <ul>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+    <li class="box">
+      <div><p>图片</p></div>
+      <div class="detail">
+       <div><p>详细资料</p></div>
+      </div>
+    </li>
+  </ul>
+
+<script>
+$('.box').hoverSlide({
+	duration:300,
+	bgColors:['#888','#F00','#0F0','#00F','#FF0','#0FF']
+});
+</script>
+</body>
+</html>

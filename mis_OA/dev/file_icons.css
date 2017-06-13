@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+.f-icon.f-ace{background-image:url(images/icons/file_extension/file_ace.png);}
+.f-icon.f-ai{background-image:url(images/icons/file_extension/file_ai.png);}
+.f-icon.f-aif{background-image:url(images/icons/file_extension/file_aif.png);}
+.f-icon.f-aiff{background-image:url(images/icons/file_extension/file_aiff.png);}
+.f-icon.f-amr{background-image:url(images/icons/file_extension/file_amr.png);}
+.f-icon.f-asf{background-image:url(images/icons/file_extension/file_asf.png);}
+.f-icon.f-asx{background-image:url(images/icons/file_extension/file_asx.png);}
+.f-icon.f-bup{background-image:url(images/icons/file_extension/file_bup.png);}
+.f-icon.f-cbr{background-image:url(images/icons/file_extension/file_cbr.png);}
+.f-icon.f-cda{background-image:url(images/icons/file_extension/file_cda.png);}
+.f-icon.f-cdl{background-image:url(images/icons/file_extension/file_cdl.png);}
+.f-icon.f-cdr{background-image:url(images/icons/file_extension/file_cdr.png);}
+.f-icon.f-divx{background-image:url(images/icons/file_extension/file_divx.png);}
+.f-icon.f-dmg{background-image:url(images/icons/file_extension/file_dmg.png);}
+.f-icon.f-dss{background-image:url(images/icons/file_extension/file_dss.png);}
+.f-icon.f-dvf{background-image:url(images/icons/file_extension/file_dvf.png);}
+.f-icon.f-dwg{background-image:url(images/icons/file_extension/file_dwg.png);}
+.f-icon.f-eps{background-image:url(images/icons/file_extension/file_eps.png);}
+.f-icon.f-hqx{background-image:url(images/icons/file_extension/file_hqx.png);}
+.f-icon.f-ifo{background-image:url(images/icons/file_extension/file_ifo.png);}
+.f-icon.f-indd{background-image:url(images/icons/file_extension/file_indd.png);}
+.f-icon.f-m4a{background-image:url(images/icons/file_extension/file_m4a.png);}
+.f-icon.f-m4b{background-image:url(images/icons/file_extension/file_m4b.png);}
+.f-icon.f-m4v{background-image:url(images/icons/file_extension/file_m4v.png);}
+.f-icon.f-mcd{background-image:url(images/icons/file_extension/file_mcd.png);}
+.f-icon.f-mswmm{
+	background-image:url(images/icons/file_extension/file_mswmm.png);
+}
+.f-icon.f-ogg{
+	background-image:url(images/icons/file_extension/file_ogg.png);
+}
+
+.f-icon.f-pps{
+	background-image:url(images/icons/file_extension/file_pps.png);
+}
+.f-icon.f-ps{
+	background-image:url(images/icons/file_extension/file_ps.png);
+}
+
+.f-icon.f-pst{
+	background-image:url(images/icons/file_extension/file_pst.png);
+}
+.f-icon.f-ptb{
+	background-image:url(images/icons/file_extension/file_ptb.png);
+}
+.f-icon.f-pub{
+	background-image:url(images/icons/file_extension/file_pub.png);
+}
+.f-icon.f-qbb{
+	background-image:url(images/icons/file_extension/file_qbb.png);
+}
+.f-icon.f-qbw{
+	background-image:url(images/icons/file_extension/file_qbw.png);
+}
+.f-icon.f-qxd{
+	background-image:url(images/icons/file_extension/file_qxd.png);
+}
+.f-icon.f-ram{
+	background-image:url(images/icons/file_extension/file_ram.png);
+}
+
+.f-icon.f-rule{
+	background-image:url(images/icons/file_extension/file_rule.png);
+}
+.f-icon.f-sea{
+	background-image:url(images/icons/file_extension/file_sea.png);
+}
+.f-icon.f-ses{
+	background-image:url(images/icons/file_extension/file_ses.png);
+}
+.f-icon.f-sit{
+	background-image:url(images/icons/file_extension/file_sit.png);
+}
+.f-icon.f-sitx{
+	background-image:url(images/icons/file_extension/file_sitx.png);
+}
+.f-icon.f-ss{
+	background-image:url(images/icons/file_extension/file_ss.png);
+}
+
+.f-icon.f-thm{
+	background-image:url(images/icons/file_extension/file_thm.png);
+}
+.f-icon.f-tif{
+	background-image:url(images/icons/file_extension/file_tif.png);
+}
+.f-icon.f-tmp{
+	background-image:url(images/icons/file_extension/file_tmp.png);
+}
+.f-icon.f-torrent{
+	background-image:url(images/icons/file_extension/file_torrent.png);
+}
+
+.f-icon.f-vcd{
+	background-image:url(images/icons/file_extension/file_vcd.png);
+}
+.f-icon.f-vob{
+	background-image:url(images/icons/file_extension/file_vob.png);
+}

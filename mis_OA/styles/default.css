@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+
+#main{
+	margin-right:260px;
+}
+
+#main h3 {
+	border-bottom: 1px solid #DEDEFF;
+}
+
+#main .block {
+	float:left;
+	width:50%;
+}
+
+#main .block div.inner_block {
+	background:#FFF url(images/block-bg.png) repeat-x top;
+	margin:0 8px 15px 8px;
+	padding:10px;
+	border:1px solid #DDD;
+}
+
+#side .block {
+	padding:10px;
+}
+
+#side h3 {
+	margin-bottom: 5px;
+	border-bottom: none;
+}
+
+.scroller-container{
+	background: #F2F5F7;
+	border:1px solid #BBB;
+	height:160px;
+}
+
+/* IE6 hack */
+* html #notices .round_rect{
+    border-radius:none;
+}

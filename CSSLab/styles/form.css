@@ -1,0 +1,125 @@
+form.search-bar
+{
+	border: 1px solid red;
+	display: inline-block;
+	padding: 0;
+	background: white;
+}
+
+form.search-bar > input
+{
+	border: none;
+	width: 20em;
+	background: transparent;
+	outline: none;
+}
+
+form.search-bar button
+{
+	background: red url(images/search-bg.png) no-repeat center center;;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	text-indent: -9999px
+}
+
+form 
+{
+	margin: 2em;
+	display: inline-block;
+}
+
+
+form.search-bar-2 input[type="search"]
+{
+	line-height:1.8em;
+	border:1px solid darkred;
+	border-radius: 2em;
+	padding: 5px 30px 5px 1em;
+	width: 16em;
+	outline:none;
+	box-shadow: 2px 2px 4px 1px #AAA inset;	
+}
+
+form.search-bar-2 input[type="search"]:focus
+{
+	border-color: blue;
+	box-shodow: 2px 2px 4px 1px blue inset;
+	width:30em;
+}
+
+form.search-bar-2 input[type="submit"]
+{
+	position: relative;
+	left: -3em;
+	
+	border:none;
+	outline: none;
+	background:transparent url(images/search2-bg.png) no-repeat center center;
+	text-indent:-9999px;
+}
+
+form.login label
+{
+	display: none;
+}
+
+form.login
+{
+	width:400px;
+	border: 1px solid #CCC;
+	background: #F4F4F4;
+	text-align: center;
+	padding:20px;
+	
+}
+
+form.login input[type="text"],
+form.login input[type="password"]
+{
+	padding: 15px;
+	display: block;
+	font-size:1.2em;
+	
+	width:370px;
+}
+
+form.login input[type="submit"]
+{
+	width:400px;
+	height:50px;
+	border: 1px solid #006;
+	background:#06F;
+	color: white;
+	font-size:1.5em;
+	font-family:"微软雅黑";
+}
+
+form.login input[type="text"]
+{
+	border: 1px solid #CCC;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: none;
+}
+
+form.login input[type="password"]
+{
+	border: 1px solid #CCC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+form.login p 
+{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+

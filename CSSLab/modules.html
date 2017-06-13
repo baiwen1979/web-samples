@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="styles/images/web-icon.png"/>
+<link rel="stylesheet" type="text/css" href="styles/base.css"/>
+<link rel="stylesheet" type="text/css" href="styles/layout.css"/>
+<link rel="stylesheet" type="text/css" href="styles/theme-normal.css"/>
+<!--各模块对应的CSS-->
+<link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+<link rel="stylesheet" type="text/css" href="styles/tabs.css"/>
+<link rel="stylesheet" type="text/css" href="styles/form.css"/>
+<link rel="stylesheet" type="text/css" href="styles/slides.css"/>
+<title>网页常用模块</title>
+</head>
+<body>
+  <h1>网页常用模块</h1>
+  <div id="m-01">
+    <h2>下拉式菜单导航条:Dropdown Menu Navigation</h2>
+    <ul class="dropdown-menu columns-container">
+      <li class="current"><a href="#">首页</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">培训课程</a>
+        <ul>
+          <li><a href="#">WebUI设计</a></li>
+          <li><a href="#">移动UI设计</a></li>
+          <li><a href="#">平面设计</a></li>
+          <li><a href="#">移动应用开发</a>
+            <ul>
+              <li><a href="#">Android开发</a></li>
+              <li><a href="#">iOS开发</a></li>
+              <li><a href="#">Window Phone开发</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+  <div id="m-02">
+    <h2>无JS标签页:No JavaScript Tabs</h2>
+    <ul class="tabs-no-js columns-container">
+      <li class="active">
+        <h3><a href="#">标签页一</a></h3>
+        <div>
+          <p>标签页1的内容,你可以往此处添加任何内容！</p>
+        </div>
+      </li>
+      <li>
+        <h3><a href="#">标签页二</a></h3>
+        <div>
+          <p>标签页2的内容,你可以往此处添加任何内容！</p>
+        </div>
+      </li>
+      <li>
+        <h3><a href="#">标签页三</a></h3>
+        <div>
+          <p>标签页3的内容,你可以往此处添加任何内容！</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="m-03">
+    <h2>搜索表单:Search Form</h2>
+    <form id="search" name="search" method="get" class="search-bar">
+      <input type="search" name="keyword" id="key"/>
+      <button>搜索</button>
+    </form>
+    <form id="search2" name="search2" class="search-bar-2">
+      <input type="search" name="key" id="key"/>
+      <input type="submit" value="搜索" />
+    </form>
+  </div>
+  <div id="m-04" class="columns-container">
+    <h2>登录表单: Login Form</h2>
+    <form id="login" name="login" class="login left">
+      <p><label for="username">用户名:</label><input type="text" placeholder="QQ号码/手机/邮箱" name="username" id="username"/></p>
+      <p><label for="password">密码:</label><input type="password" placeholder="密码" name="password" id="password"/></p>
+      <p><input type="submit" value="登录"/></p>
+    </form>
+  </div>
+  <div id="m-05">
+    <h2>幻灯片(图片列表)：Slides</h2>
+    <div class="slides">
+      <ul class="columns-container">
+        <li>
+          <img src="images/slide-1.jpg" alt="八仙花" width="300" height="200"/>
+        </li>
+        <li>
+          <img src="images/slide-2.jpg" alt="八仙花" width="300" height="200"/>
+        </li>
+        <li>
+          <img src="images/slide-3.jpg" alt="八仙花" width="300" height="200"/>
+        </li>
+      </ul>
+      <ol class="buttons">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ol>
+      <a href="#" class="prev">&lt;</a>
+      <a href="#" class="next">&gt;</a>
+    </div>
+  </div>
+   
+</body>
+</html>

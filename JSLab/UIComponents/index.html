@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UI组件</title>
+  <link rel="stylesheet" href="styles/UIComponents.css"/>
+</head>
+<body>
+  <h1>常用UI组件</h1>
+  <h2>进度条</h2>
+  <input id="btnStart" type="button" value="开始"/>
+  <div class="progress-bar">
+    <p id="indicator">0%</p>
+  </div>
+  <h2>模拟时钟</h2>
+  <div class="clock">
+	<div id="hour" class="pointer"></div>
+	<div id="minute" class="pointer"></div>
+	<div id="second" class="pointer"></div>
+  </div>
+  <h2>点击式标签页</h2>
+  <div class="tabs">
+    <ul class="tabs-nav columns-container">
+	  <li class="active"><a href="#">Tab 1</a></li>
+	  <li><a href="#">Tab 2</a></li>
+	  <li><a href="#">Tab 3</a></li>
+	</ul>
+	<ul class="tabs-content">
+	  <li style="display:block"><div><p>The content of Tab 1</p></div></li>
+	  <li><div><p>The content of Tab 2</p></div></li>
+	  <li><div><p>The content of Tab 3</p></div></li>
+	</ul>
+  </div>
+  <h2>可编辑表格</h2>
+  <div id="dynamicTable">
+  </div>
+  <script src="scripts/UIComponents.js"></script>
+</body>
+</html>

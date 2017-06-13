@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页打字通 - Web Typing</title>
+  <link rel="stylesheet" href="styles/typing.css"/>
+</head>
+<body>
+  <h1 class="logo">网页打字通</h1>
+  <ul class="status columns-container">
+	<li><em id="timer">00:00</em></li>
+	<li>wpm <em id="wpm">0</em></li>
+	<li>正确率 <em id="accurate-rate">0%</em></li>
+  </ul>
+  <div class="panel">
+    <div id="text">
+	  	  
+	</div>
+	<div class="columns-container">
+	  <div id="left-hand">
+		<p>L</p>
+	  </div>
+	  <ul id="keyboard">
+	    <li class="key two-line">~<br>`</li>
+		<li class="key two-line">!<br>1</li>
+		<li class="key two-line">@<br>2</li>
+		<li class="key two-line">#<br>3</li>
+		<li class="key two-line">$<br>4</li>
+		<li class="key two-line">%<br>5</li>
+		<li class="key two-line">^<br>6</li>
+		<li class="key two-line">&amp;<br>7</li>
+		<li class="key two-line">*<br>8</li>
+		<li class="key two-line">(<br>9</li>
+		<li class="key two-line">)<br>0</li>
+		<li class="key two-line">_<br>-</li>
+		<li class="key two-line">+<br>=</li>
+		<li id="backspace" class="key">backspace</li>
+		
+		<li id="tab" class="key">Tab</li>
+		<li class="key letter">Q</li>
+		<li class="key letter">W</li>
+		<li class="key letter">E</li>
+		<li class="key letter">R</li>
+		<li class="key letter">T</li>
+		<li class="key letter">Y</li>
+		<li class="key letter">U</li>
+		<li class="key letter">I</li>
+		<li class="key letter">O</li>
+		<li class="key letter">P</li>
+		<li class="key two-line">{<br>[</li>
+		<li class="key two-line">}<br>]</li>
+		<li class="key two-line last">|<br>\</li>
+		
+		<li id="capslock" class="key">capslock</li>
+		<li class="key letter">A</li>
+		<li class="key letter">S</li>
+		<li class="key letter">D</li>
+		<li class="key letter">F</li>
+		<li class="key letter">G</li>
+		<li class="key letter">H</li>
+		<li class="key letter">J</li>
+		<li class="key letter">K</li>
+		<li class="key letter">L</li>
+		<li class="key two-line">:<br>;</li>
+		<li class="key two-line">"<br>'</li>
+		<li id="enter" class="key">Enter</li>
+		
+		<li id="l-shift" class="key">Shift</li>
+		<li class="key letter">Z</li>
+		<li class="key letter">X</li>
+		<li class="key letter">C</li>
+		<li class="key letter">V</li>
+		<li class="key letter">B</li>
+		<li class="key letter">N</li>
+		<li class="key letter">M</li>
+		<li class="key two-line"><<br>,</li>
+		<li class="key two-line">><br>.</li>
+		<li class="key two-line">?<br>/</li>
+		<li id="r-shift" class="key">Shift</li>
+		
+		<li id="l-ctrl" class="key">Ctrl</li>
+		<li id="l-alt" class="key">Alt</li>
+		<li id="space" class="key"> </li>
+		<li id="r-alt" class="key">Alt</li>
+		<li id="r-ctrl" class="key">Ctrl</li>
+	  </ul>
+	  <div id="right-hand">
+		<p>R</p>
+	  </div>
+	</div>
+  </div>
+<script src="scripts/util.js"></script>
+<script src="scripts/typing.js"></script>
+<script src="scripts/typing-mvc.js"></script>
+<script src="scripts/typing-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+#header .container {
+    background: #EFEFEF;
+}
+
+#header .banner .container {
+    background: #555;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+div.center {
+    width:1000px;
+    margin: 0 auto;
+}
+
+div.logo {
+    margin: 40px 60px;
+    float: left;
+}
+
+div.nav {
+    float: left;
+    margin: 40px;
+}
+
+#nav-links {
+    list-style-type: none;
+}
+
+#nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+div.clear {
+    clear: both;
+}
+
+#header div.inner-box {
+     background: #111;
+}
+
+#header .banner .center {
+    padding: 60px 0 40px;
+    text-align: center;
+    color: white;
+    line-height: 3em;
+}
+
+#subscribe input {
+    padding: 10px 10px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+#services .center {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#services .center > p {
+    padding: 10px 100px;
+}
+
+#services ul {
+    list-style-type: none;
+}
+
+#services li {
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#services li:before {
+    content: " ";
+    width: 110px;
+    height: 106px;
+    display: block;
+    margin: 25px auto;   
+    background: url(images/icons-service.png);
+    background-repeat: no-repeat;
+}
+
+
+#services li:nth-child(1):before {
+    background-position: 0 0;
+}
+
+
+#services li:nth-child(2):before {
+    background-position: 0 -106px;
+}
+
+
+#services li:nth-child(3):before {
+    background-position: 0 -212px;
+}
+
+#services li:nth-child(4):before {
+    background-position: 0 -317px;
+}
+
+
+#service-video {
+    background-color: #EFEFEF;
+}
+
+#video-play {
+    background-color: #555;
+    width: 70%;
+    margin: 20px auto;
+    position: relative;
+}
+
+#video-play video {
+    width: 100%;
+}
+
+.play-button {
+    position: absolute;
+    display: block;
+    text-indent: -9999px;
+    width:108px;
+    height:115px;
+    top:160px;
+    left:300px;
+    background-image: url(images/icons-social.png);
+    background-position: 0 -120px;
+    background-repeat: no-repeat;
+}
+
+#products .center > h2, #products .center > p {
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+}
+
+#products ul {
+    list-style-type: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#products ul li {
+    display: inline-block;
+    width: 260px;
+}
+
+#products ul li:before {
+    content: " ";
+    width:64px;
+    height:64px;
+    display: block;
+    float: left;    
+    margin: 10px 10px 60px 0px;
+    background-image: url("images/icons-service.png");
+    background-repeat: no-repeat;
+}
+
+#products ul li:nth-child(1):before {
+    background-position: 0 -430px;
+}
+
+#products ul li:nth-child(2):before {
+    background-position: 0 -494px;
+}
+
+#products ul li:nth-child(3):before {
+    background-position: 0 -558px;
+}
+
+#products ul li:nth-child(4):before {
+    background-position: 0 -623px;
+}
+
+#products ul li:nth-child(5):before {
+    background-position: 0 -686px;
+}
+
+#products ul li:nth-child(6):before {
+    background-position: 0 -750px;
+}
+

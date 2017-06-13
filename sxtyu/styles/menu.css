@@ -1,0 +1,19 @@
+/* CSS Document */
+#nav-links > li {
+	position: relative;
+}
+
+#nav-links > li:hover ul {
+	display:block;
+	position:absolute;
+	background:#003e8b;
+}
+
+#nav-links > li ul li {
+	display:inline;
+}
+
+#nav-links > li ul a:hover {
+	background:red;
+}
+

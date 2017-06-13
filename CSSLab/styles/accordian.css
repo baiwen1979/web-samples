@@ -1,0 +1,57 @@
+*{margin:0px;padding:0px;}
+body{background:#b1b1b1;margin:0px;padding:0px;font-size:14px;color:#000;}
+b#p1, b#p2, b#p3, b#p4, b#p5 {display:none;}
+#accordian {padding:0; margin:20px auto; list-style:none; width:730px; height:300px; overflow:hidden; position:relative; border:1px solid #682;}
+#accordian li {width:50px; height:300px; float:left;
+	-moz-transition: 0.7s;
+	-ms-transition: 0.7s;
+	-o-transition: 0.7s;
+	-webkit-transition: 0.7s;
+	transition: 0.7s;
+}
+#accordian div {width:530px; height:300px; position:relative;}
+#accordian div span {display:block; background:rgba(0,0,0,.3); width:460px; height:30px; position:absolute; bottom:300px; right:0; padding:10px; color:#fff; font:normal 13px/30px 'georgia', serif; border-top:1px solid #000;
+}
+#accordian div span a {color:#fff;}
+#accordian li div > a {display:block; width:49px; height:300px; float:left; position:relative; color:#fff; text-decoration:none;box-shadow:-10px 0 10px -10px rgba(0,0,0,0.6);}
+#accordian li div > a b {display:block; width:280px; padding-left:20px; height:50px; position:absolute; left:50px; bottom:0; font:bold 24px/50px 'georgia', serif; text-shadow:0 0 2px rgba(0, 0, 0, 0.6);
+	transform: rotate(-90deg);
+	transform-origin:bottom left;
+	-ms-transform: rotate(-90deg);
+	-ms-transform-origin:bottom left;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin:bottom left;
+	-moz-transform: rotate(-90deg);
+	-moz-transform-origin:bottom left;
+	-o-transform: rotate(-90deg);
+	-o-transform-origin:bottom left;
+}
+#accordian li div > a b {*left:0;}
+#accordian li img {display:block; float:left;}
+#accordian li.p1 {width:530px;}
+#accordian li.p1 div span {bottom:0;}
+#accordian li a.a1 {background:#460; border-left:1px solid #682;}
+#accordian li a.a2 {background:#793; border-left:1px solid #9b5;}
+#accordian li a.a3 {background:#ac3; border-left:1px solid #ce5;}
+#accordian li a.a4 {background:#cd5; border-left:1px solid #ef7;}
+#accordian li a.a5 {background:#069; border-left:1px solid #28b;}
+#p1:target ~ #accordian li {width:50px;}
+#p1:target ~ #accordian li div span {bottom:300px;}
+#p1:target ~ #accordian li.p1 {width:530px;}
+#p1:target ~ #accordian li.p1 div span {bottom:0;}
+#p2:target ~ #accordian li {width:50px;}
+#p2:target ~ #accordian li div span {bottom:300px;}
+#p2:target ~ #accordian li.p2 {width:530px;}
+#p2:target ~ #accordian li.p2 div span {bottom:0;}
+#p3:target ~ #accordian li {width:50px;}
+#p3:target ~ #accordian li div span {bottom:300px;}
+#p3:target ~ #accordian li.p3 {width:530px;}
+#p3:target ~ #accordian li.p3 div span {bottom:0;}
+#p4:target ~ #accordian li {width:50px;}
+#p4:target ~ #accordian li div span {bottom:300px;}
+#p4:target ~ #accordian li.p4 {width:530px;}
+#p4:target ~ #accordian li.p4 div span {bottom:0;}
+#p5:target ~ #accordian li {width:50px;}
+#p5:target ~ #accordian li div span {bottom:300px;}
+#p5:target ~ #accordian li.p5 {width:530px;}
+#p5:target ~ #accordian li.p5 div span {bottom:0;}

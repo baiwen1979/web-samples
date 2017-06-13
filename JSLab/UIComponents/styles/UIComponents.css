@@ -1,0 +1,136 @@
+.columns-container
+{
+	display: block;
+}
+
+.columns-container:after
+{
+	display: block;
+	content: "";
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+div.progress-bar
+{
+   width: 400px;
+   border: 1px solid black;
+   margin: 10px;
+   padding: 0;
+}
+
+div.progress-bar p
+{
+	width: 0%;
+	background: blue;
+	line-height: 32px;
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+div.clock
+{
+	background: orange url(images/clock-bg.png) no-repeat center center;
+	height: 200px;
+	width: 200px;
+	border: 2px solid red;
+	border-radius: 10px;
+	position: relative;
+}
+
+div.clock .pointer
+{
+	width: 4px;
+	height: 60px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	margin-left: -2px;
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: 2px 60px;
+}
+
+div.clock #hour
+{
+	background: green;
+	height: 40px;
+	
+	-webkit-transform: rotate(60deg);
+	-webkit-transform-origin: 2px 40px;
+}
+
+div.clock #minute
+{
+	background: blue;
+	height: 50px;
+	-webkit-transform: rotate(90deg);
+	-webkit-transform-origin: 2px 50px;
+}
+
+div.tabs
+{
+	width: 50%;
+}
+
+div.tabs ul
+{
+	list-style: none;
+}
+
+div.tabs .tabs-nav
+{	
+	border-bottom: 2px solid gray;
+	
+}
+
+div.tabs .tabs-nav li {
+	display: block;
+	float: left;
+	border: 2px solid gray;
+	border-bottom: none;
+	margin-right: 20px;
+	background: lightgray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+div.tabs .tabs-nav li.active
+{
+	background: white;
+	position: relative;
+	top: 2px;
+}
+
+div.tabs .tabs-nav li.active a
+{
+	color: red;
+}
+
+div.tabs .tabs-nav li a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+}
+
+div.tabs .tabs-content li
+{
+	display: none;
+}
+
+table
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td
+{
+	border: 1px solid gray;
+	padding: 10px;
+}

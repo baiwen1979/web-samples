@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+ul.posters-3d 
+{ 
+    list-style: none; 
+	margin: 60px 0 120px;  
+}
+
+ul.posters-3d li 
+{
+	float: left;
+        /* safari, chrome*/
+	-webkit-perspective: 500; 
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: perspective; 
+	-webkit-transition-duration: 0.5s;
+        /* firefox */
+        -moz-perspective: 500; 
+	-moz-transform-style: preserve-3d;
+	-moz-transition-property: perspective; 
+	-moz-transition-duration: 0.5s; 
+        /* standard */
+        perspective: 500; 
+	transform-style: preserve-3d;
+	transition-property: perspective; 
+	transition-duration: 0.5s;  
+}
+
+ul.posters-3d li:hover 
+{ 
+    -webkit-perspective: 5000; /* safari, chrome */
+    -moz-perspective: 5000; /* firefox */
+    perspective: 5000; /* standard */
+}
+	
+ul.posters-3d li img 
+{ 
+    border: 10px solid #fcfafa; 
+        /* safari, chrome */
+	-webkit-transform: rotateY(30deg);
+	-webkit-box-shadow: 0 3px 10px #888; 
+	-webkit-transition-property: transform; 
+	-webkit-transition-duration: 0.5s; 
+        /* firefox */
+        -moz-transform: rotateY(30deg);
+	-moz-box-shadow: 0 3px 10px #888; 
+	-moz-transition-property: transform; 
+	-moz-transition-duration: 0.5s;
+        /* standard */
+        transform: rotateY(30deg);
+	box-shadow: 0 3px 10px #888; 
+	transition-property: transform; 
+	transition-duration: 0.5s;
+}
+
+ul.posters-3d li:hover img {
+    -webkit-transform: rotateY(0deg); 
+    -moz-transform: rotateY(0deg);
+    transform: rototeY(0deg);
+}
+
+ul.posters-3d li > div 
+{   
+    border: 10px solid #fcfafa; 
+    padding: 20px; 
+    width: 200px; 
+    height: 180px; 
+    background-color: #deddcd; 
+    margin: -195px 0 0 55px; 
+    position: absolute;
+    /* safari, chrome */
+    -webkit-box-shadow: 0 20px 40px #888;
+    -webkit-transform: translateZ(30px) rotateY(30deg);
+    -webkit-transition-property: transform, box-shadow, margin;
+    -webkit-transition-duration: 0.5s;
+    /* firefox */
+    -moz-box-shadow: 0 20px 40px #888;
+    -moz-transform: translateZ(30px) rotateY(30deg);
+    -moz-transition-property: transform, box-shadow, margin;
+    -moz-transition-duration: 0.5s; 
+    /* standard */
+    box-shadow: 0 20px 40px #888;
+    transform: translateZ(30px) rotateY(30deg);
+    transition-property: transform, box-shadow, margin;
+    transition-duration: 0.5s;
+}
+	
+ul.posters-3d li:hover > div 
+{ 
+	-webkit-transform: rotateY(0deg); 
+	-webkit-box-shadow: 0 5px 10px #888; 
+ 	-moz-transform: rotateY(0deg); 
+	-moz-box-shadow: 0 5px 10px #888;        
+        transform: rotateY(0deg); 
+	box-shadow: 0 5px 10px #888; 
+	margin: -175px 0 0 30px; 
+}
+	
+ul.posters-3d li h3 
+{ 
+    color: #7a3f3a; 
+	text-align: center; 
+	padding-bottom: 15px; 
+}
+
+ul.posters-3d li p 
+{ 
+    padding-bottom: 15px; 
+}
+
+ul.posters-3d li a 
+{ 
+    background-color: #7a3f3a; 
+	padding: 5px 10px; 
+	color: #eee; 
+	text-decoration: none; 
+	display: block; 
+	width: 80px; 
+	text-align: center; 
+	margin: 0 auto;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+        border-radius: 5px;
+}
+ul.posters-3d li a:hover, ul.posters-3d li a:focus 
+{ 
+    background-color: #6a191f; 
+	color: #fff; 
+}

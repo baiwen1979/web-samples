@@ -1,0 +1,17 @@
+/* CSS Document */
+body {
+	background-color:#FFF;
+	font-family: "宋体", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	width:965px;
+	margin:0 auto;
+}
+
+a {
+	color: #039;
+	text-decoration: none;
+}
+
+h3 {
+	font-size:1.2em;
+}

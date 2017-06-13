@@ -1,0 +1,245 @@
+/* CSS Document */
+
+/******** 页 头**********/
+/* 校徽 */
+#logo {
+	margin-top: 24px;
+	float: left;
+}
+
+/******* 搜索栏 *********/
+#search-bar {
+	margin-top: 10px;
+	float: right;
+	width: 600px;
+	text-align: right;
+}
+
+#search-bar label {
+    color: #8e090a;
+	font-weight:bold;
+}
+
+#search-bar input[type='submit'] {
+	background-image:url('images/go.jpg');
+	text-indent:-9999px;
+	padding: 3px 13px;
+	border: 0;
+}
+
+/******* 导航条 *********/
+#nav {
+	float: right;
+	padding: 0 15px;
+	margin-top:16px;
+	background-color:#003e8b;
+	border-radius: 10px;
+}
+
+#nav a {
+	color: #FFF;
+}
+
+#nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#nav li {
+	display:inline-block;	
+}
+
+#nav li a {
+	display:inline-block;
+	padding: 9px 16px 9px 9px;
+}
+
+#nav li a:hover {
+	background-image:url('images/nav-hover-bg.jpg');
+}
+
+#nav ul ul {
+	display: none;
+}
+
+/******* 横幅 *********/
+#banner {
+	clear:both;
+	background-color:#213b75;
+	padding-bottom:16px;
+	border-radius:15px;
+}
+
+#banner img {
+	width:965px;
+	height:200px;
+}
+
+#banner ul {
+	list-style: none;
+	padding:0;
+}
+
+/******* 主内容 *********/
+/* 图文热点*/
+#image-news {
+	float: left;
+	padding: 10px; 
+}
+
+#image-news h3 {
+	padding: 8px 0;
+	background-image:url(images/hx.jpg); 
+	background-repeat:no-repeat;
+	background-position:bottom;
+	color: #4b5f9a;
+	margin:0;
+}
+
+#image-news h3 span {
+	padding-left:10px;
+	background-image:url(images/hx-left.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+#image-news h3 a {
+	float:right;
+	font-weight: normal;
+	color: black;
+	font-size: 12px;
+}
+
+#image-news ul {
+	list-style:none;
+	padding: 0;
+}
+
+#image-news img {
+	width:186px;
+	height:126px;
+}
+
+#image-news ul p {
+	margin:5px 0;
+	text-align:center;
+}
+
+#image-news ul p a {
+	color: #4b5f9a;
+	font-weight:bold;
+	display: inline-block;
+    width: 186px;
+    height: 14px;
+    overflow: hidden;
+}
+
+/*校园新闻和通知公告*/
+#campus-news-notices {
+	float: left;
+	margin: 13px 0px 13px 15px;
+	padding: 0 20px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	width: 448px;
+}
+
+#campus-news-notices h3 {
+	padding: 1px 0;
+	color: #4b5f9a;
+	margin:0;
+}
+
+#campus-news-notices h3 a {
+	font-size:12px;
+	padding: 6px 12px;
+	font-weight:normal;
+	display: inline-block;
+	background-image:url(images/tab-normal.jpg); 
+	background-repeat:no-repeat;
+}
+
+#campus-news-notices div:hover h3 a {
+	background-image:url(images/tab-active.jpg);
+	color: #FFF;
+}
+
+#campus-news-notices ul {
+	margin:0;
+	list-style-image:url(images/news-marker.jpg);
+	list-style-position:inside;
+	padding:8px 0;
+}
+
+#campus-news-notices ul li {
+	padding: 7px 2px;
+	border-bottom: 1px dashed #ccc;
+}
+
+#campus-news-notices ul li span.date{
+	float:right;
+	color: #666;
+}
+
+/*校园服务*/
+#tool-links {
+	float: right;
+	width: 230px;
+	padding:10px;
+}
+
+#tools {
+	list-style: none;
+	padding:0;
+}
+
+#tools li {
+	display: inline-block;
+}
+
+#tools li a {
+	display:inline-block;
+	width: 69px;
+	height: 70px;
+	
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+#tools li a.jw {
+	background: #DDD url("images/0001_01.gif") center top;
+}
+
+#tools li a.tug {
+	background: #DDD url("images/0001_02.gif") center top;
+}
+
+#tools li a.wlzx {
+	background: #DDD url("images/0001_03.gif") center top;
+}
+#tools li a.info {
+	background: #DDD url("images/0001_04.gif") center top;
+}
+#tools li a.zsb {
+	background: #DDD url("images/0001_05.gif") center top;
+}
+#tools li a.zs {
+	background: #DDD url("images/0001_06.gif") center top;
+}
+
+
+/******* 页脚 *********/
+#footer {
+	margin-top: 5px;
+	clear: both;
+	background-color:#213b75;
+	color: #FFF;
+	border-radius: 6px;
+}
+
+#footer p {
+	padding: 8px;
+	text-align: center;
+	margin: 0;
+}

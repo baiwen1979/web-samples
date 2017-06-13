@@ -1,0 +1,3 @@
+$(function(){
+    $.fx.off = true;
+});

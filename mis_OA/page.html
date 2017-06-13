@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="styles/jquery_ui_cupertino/jquery-ui.css" rel="stylesheet"/>
+<link type="text/css" href="styles/global.css" rel="stylesheet" />
+<link type="text/css" href="styles/framepage.css" rel="stylesheet" />
+<!--[if lte IE 8]>
+<link type="text/css" href="styles/ie.css" rel="stylesheet" />
+<![endif]-->
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery_ui.min.js"></script>
+<script type="text/javascript" src="scripts/i18n/jquery.ui.datepicker-zh-CN.js"></script>
+<script type="text/javascript" src="scripts/framepage.js"></script>
+<!--[if lt IE 8]>
+<script type="text/javascript" src="scripts/ie.js"></script>
+<![endif]-->
+<title>功能模块</title>
+</head>
+
+<body>
+  <h3>图书管理</h3>
+  <div id="main">   
+    <div id="topCmd" class="command round_top">
+       <a href="dialogFormDemo.html" class="button dialog-link">添加图书</a>
+       <a href="#" class="button confirm">删除图书</a>
+       <div class="search-panel">
+          <div class="search-form">
+            <form>
+              <input id="keyword" name="keyword" type="text" value=""/>
+              <input type="submit" class="button" value="搜索" title="搜索" />
+            </form>
+          </div>
+          <a class="advanced" href="#" title="高级">高级</a>
+          <div class="more-search common-form has_shadow" style="display:none">
+            <!--高级搜索表单开始-->
+            <form>
+              <fieldset>
+                <legend>高级搜索</legend>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th><label for="keyBookNo">图书编号:</label></th>
+                      <td><input type="text" id="keyBookNo" name="bookNo"/></td>
+                    </tr>
+                    <tr>
+                      <th><label for="keyBookName">图书名称:</label></th>
+                      <td><input type="text" id="keyBookName" name="bookName"/></td>
+                    </tr>
+                    <tr>
+                      <th><label for="keyAuthor">作者:</label></th>
+                      <td><input type="text" id="keyAuthor" name="author"/></td>
+                    </tr>
+                    <tr>
+                      <th><label for="keyPublishDate">出版日期:</label></th>
+                      <td><input type="text" class="date" id="keyPublishDate" name="publishDate"/></td>
+                    </tr>
+                    <tr>
+                      <th><label for="keyCopies">册数:</label></th>
+                      <td><input type="text" class="number" id="keyCopies" name="copies"/></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+              <p class="buttons">
+                <input class="button" type="submit" value="搜索"/>
+                <input class="button btn-cancel" type="button" value="取消"/>
+              </p>
+            </form>
+            <!--高级搜索表单结束-->
+          </div>
+       </div>
+    </div>
+    <div id="dataGrid" class="table-container">
+      <!--数据表格开始-->
+      <table>
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox" id="selectAll"  /></th>
+            <th class="sn">序号</th>
+            <th>图书编号</th><th>图书名称</th>
+            <th class="human-name-cn">作者</th>
+            <th class="short-date">出版日期</th>
+            <th class="long-date">借出时间</th>
+            <th class="action">借出</th>
+            <th class="action">详细</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="selectedBooks"  /></td>
+            <td>1</td>
+            <td>bk0001</td><td>算法导论</td><td>MIT</td>
+            <td>1998-11-11</td>
+            <td>2012-01-01 13:24:56 </td>
+            <td><a title="借出" class="o_icon lend_book" href="#">借出</a></td>
+            <td><a title="查看详细" class="o_icon detail" href="#">详细</a></td>
+          </tr>
+          <tr class="even">
+            <td><input type="checkbox" name="selectedBooks"  /></td>
+            <td>2</td>
+            <td>bk0002</td><td>C++程序设计</td><td>谭浩强</td>
+            <td>2002-11-11</td>
+            <td>2012-01-01 13:24:56 </td>
+            <td><a title="借出" class="o_icon lend_book" href="#">借出</a></td>
+            <td><a title="查看详细" class="o_icon detail" href="#">详细</a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="selectedBooks"  /></td>
+            <td>3</td>
+            <td>bk0003</td><td>Java编程</td><td>常浩</td>
+            <td>2012-11-11</td>
+            <td>2012-01-01 13:24:56 </td>
+            <td><a title="借出" class="o_icon lend_book" href="#">借出</a></td>
+            <td><a title="查看详细" class="o_icon detail" href="#">详细</a></td>
+          </tr>
+          <tr class="even">
+            <td><input type="checkbox" name="selectedBooks"  /></td>
+            <td>4</td>
+            <td>bk0004</td><td>数据结构</td><td>张倩</td>
+            <td>2005-01-13</td>
+            <td>2012-01-01 13:24:56 </td>
+            <td><a title="借出" class="o_icon lend_book" href="#">借出</a></td>
+            <td><a title="查看详细" class="o_icon detail" href="#">详细</a></td>
+          </tr>
+          <tr class="last">
+            <td><input type="checkbox" name="selectedBooks"  /></td>
+            <td>5</td>
+            <td>bk0005</td><td>操作系统</td><td>张虎</td>
+            <td>2004-12-24</td>
+            <td>2012-01-01 13:24:56 </td>
+            <td><a title="借出" class="o_icon lend_book" href="#">借出</a></td>
+            <td><a title="查看详细" class="o_icon detail" href="#">详细</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!--数据表格结束-->
+    </div>
+    <div id="bottomCmd" class="command round_bottom">
+       <a href="dialogFormDemo.html" class="button dialog-link">添加图书</a>
+       <a href="#" class="button">删除图书</a>
+       <div class="pagination">
+         <!--分页开始-->
+         <p>
+           <a href="#" title="第一页">首页</a>
+           <a href="#" title="上一页">上页</a>
+           <a href="#">1</a>
+           <a class="current" href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+           <a href="#" title="上一页">下页</a>
+           <a href="#" title="末页">末页</a>
+           共 <strong>4</strong> 页
+         </p>
+         <!--分页结束-->
+       </div>
+    </div>
+  </div>
+<!-- 对话框div:不要修改对话框div的ID -->
+<div id="dialogForm" class="common-form" style="display:none">
+</div>
+<!-- 加载指示器 -->
+<div id="indicator" class="loading" style="display:none">
+  <span class="round_rect">载入中...</span>
+</div>
+</body>
+</html>

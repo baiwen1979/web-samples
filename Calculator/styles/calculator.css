@@ -1,0 +1,106 @@
+#calculator
+{
+	position: fixed;
+	width: 257px;
+	height: 440px;
+	background: #333;
+	left: 50%;
+	top: 50%;
+	margin-left: -143px;
+	margin-top: -235px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#display 
+{
+	line-height: 80px;
+	font-size: 40px;
+	background: white;
+	margin: 0;
+	margin-bottom: 25px;
+	text-align: right;
+	overflow: hidden;
+}
+
+#buttons
+{
+	list-style: none;
+	padding: 0;
+}
+
+#buttons:after
+{
+	content:"";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#buttons li
+{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+#buttons li:nth-child(4n)
+{
+	margin-right: 0;
+}
+
+#buttons li a
+{
+	display: block;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	width: 53px;
+	background: white;
+	text-decoration: none;
+	font-size: 32px;
+	color: black;
+}
+
+#buttons li.number a
+{
+	background: #CFDEF3;
+}
+
+#buttons li.number a:hover
+{
+	background: white;
+}
+
+#buttons li.operator a
+{
+	background: #666;
+	color: white;
+}
+
+#buttons li.operator a:hover
+{
+	background: #555;
+}
+
+#buttons li.clear a
+{
+	background: blue;
+}
+
+#buttons li.clear a:hover
+{
+	background: #4444FF;
+}
+
+#buttons li.equal a
+{
+	background: #FF6600;
+}
+
+#buttons li.equal a:hover
+{
+	background: orange;
+}
+

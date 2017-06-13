@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* 主题样式 */
+
+/**************页头(header)****************/
+/*logo*/
+h1
+{
+	color: #298AC7;
+}
+
+h1 em
+{
+	font-size: 0.3em;
+	font-style: normal;
+	color: #B6E3FE;
+	text-transform: uppercase;
+}
+
+/*顶部工具栏*/
+#top-bar a
+{
+	color: #83D7FD;
+}
+ 
+#top-bar select
+{
+	color: #2185CF;
+	border: none;
+	font-weight: bold;
+	font-size: 0.6em;
+}
+/*搜索与购物车*/
+#search-cart form input[type="text"]
+{
+	border: 1px solid #D5EEFD;
+	background: #F4FBFF;
+}
+
+#search-cart form input[type="submit"]
+{
+	text-indent: -999em;
+	border: none;
+	background: transparent url(images/sprite.png) no-repeat -40px -565px; 
+}
+
+#search-cart h3:before
+{
+	background: #93D6FD url(images/sprite.png) no-repeat 0px -560px;
+}
+
+#search-cart h3
+{
+	border: 1px solid #93D6FD;
+	color: #7ECEFD;
+}
+
+#search-cart h3 em
+{
+	margin-right: 10px;
+	font-style: normal;
+}
+
+/**************导航条***************/
+#nav
+{
+	background-color: #7ECEFD;
+}
+
+#nav ul li
+{
+	border-right-color: #4EB3FC;
+	border-left-color: #B7E4FE;
+}
+
+#nav a
+{
+	color: white;
+	font-weight: bold;
+}
+
+#nav a:hover
+{
+	background-color: #2185C5;
+}
+
+/***************banner**************/
+#banner
+{
+	background-color: #F2F2F2;
+}
+
+#banner h2
+{
+	font-size: 6em;
+	line-height: 0.8em;
+	text-transform: capitalize;
+	font-weight: lighter;
+	color: #2185C5;
+}
+
+#banner h2 em
+{
+	font-size: 0.6em;
+	font-style: normal;
+	color: #83D0FD;
+}
+
+#banner p strong
+{
+	font-size: 1.2em;
+}
+
+#banner p em
+{
+    font-size: 1.5em;
+	font-style: normal;
+	color: #83D0FD;
+}
+
+#banner p a
+{
+	background: #7ECEFD;
+	color: white;
+}
+
+#banner p a:hover
+{
+    background-color: #2185C5;
+}
+
+#banner ol.buttons a
+{
+	background: #D2D2D2;
+	border-radius: 10px;
+	
+	text-indent: -999em;
+}
+
+#banner ol.buttons a:hover
+{
+	background-color: #3B8FC9;
+}
+
+/****************内容区****************/
+/*服务列表*/
+#services li
+{
+	background: #D8D8D8 url(images/sprite.png) no-repeat 20px 0px;
+}
+
+#services li:nth-child(2)
+{
+    background-color: #7ECEFD;
+    background-position: 20px -145px;
+}
+
+#services li:nth-child(3)
+{
+	background-color: #2185C5;
+	background-position: 20px -290px;
+}
+
+#services li h3,
+#services li p
+{
+	color: white;
+}
+
+#services li p
+{
+    font-size: 0.5em;    
+}
+
+#services li h3
+{
+    font-size: 1.5em;
+}
+
+#services li h3 em
+{
+    font-size: 1.4em;
+	font-style: normal;
+}
+
+/*品牌列表*/
+#trademarks
+{
+   background-color: #F2F2F2;
+}
+
+#trademarks li
+{
+	background: transparent url(images/sprite.png) no-repeat 30px -600px;
+	border-left-color: #ECEAEA;
+	border-right-color: #F5F5F5;
+}
+
+#trademarks li:nth-child(2)
+{
+    background-position: -20px -765px;
+}
+
+#trademarks li:nth-child(3)
+{
+    background-position: -20px -685px;
+}
+
+#trademarks li:nth-child(4)
+{
+    background-position: -20px -845px;
+}
+
+#trademarks li:nth-child(5)
+{
+    background-position: 10px -940px;
+}
+
+#trademarks li a
+{
+	text-indent: 999em;
+}
+
+/*广告*/
+#ads div.left-column h3
+{
+    font-weight:bold;
+	font-size: 1.8em;
+	color: black;
+	line-height: 1em;
+}
+
+#ads div.left-column h3:after
+{
+    content: "";
+	padding: 8px 15px;
+	background: url(images/sprite.png) no-repeat 0px -438px;
+}
+
+#ads div.right-column h3
+{
+    color: #338FCA;
+	font-size: 3em;
+	line-height: 1em;
+}
+
+#ads div.right-column h3 em
+{
+    color: #89D2FD;
+	font-style: normal;
+}
+
+/*新产品列表*/
+#new-products h2
+{
+    color: #2C90D3;
+	font-size: 1.6em;
+}
+
+#new-products ul li h3
+{
+    color: #2185C5;
+}
+
+#new-products ul li em
+{
+    color: #7ECEFD;
+	font-size: 1.4em;
+	font-style: normal;
+}
+
+#new-products ul li a.cart
+{
+    background: #93D6FD url(images/sprite.png) no-repeat 0px -560px;
+	text-indent: -999em;
+}
+
+#new-products ul li a.cart:hover
+{
+    background-color: #2185C5;
+}
+
+#new-products ul li a.detail
+{
+    background-color: #2185C5;
+	color: white;
+}
+
+#new-products ul li a.detail:hover
+{
+    background-color: #D4D4D4;
+	
+}
+
+/*站点地图*/
+#site-map
+{
+    background-color: #F1F1F1;
+	
+}
+
+#site-map h4
+{
+	color: #A0D5FA;
+}
+
+#site-map address
+{
+    font-style: normal;
+	text-transform: uppercase;
+}
+
+#site-map address.tel
+{
+    font-size: 1.5em;
+	text-transform: none;
+}
+
+#contacts a
+{
+    background: url(images/sprite.png) no-repeat -100px -570px;
+    text-indent: -999em;
+}
+
+#contacts a.twitter
+{
+	background-position: -148px -570px;
+}
+
+#contacts a.rss
+{
+	background-position: -192px -570px;
+}
+
+#footer
+{
+    background: #2185C5;
+	padding-left: 10px;
+	color: white;
+}
+
+#footer a
+{
+    background: url(images/sprite.png) no-repeat 0px -500px;
+	text-indent: -999em;
+}
+
+
+
+
+

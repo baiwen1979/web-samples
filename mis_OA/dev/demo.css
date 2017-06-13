@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#leftSide {
+	float: left;
+	width: 240px;
+	margin: 0 20px;
+	background-color: #9CC;
+	padding:10px;
+}
+
+#main {
+	width:auto;
+	margin:20px 300px;
+	background-color:#F93;
+	padding:10px;
+}
+
+.draggable {
+	border:1px solid #000;
+	padding:5px;
+	margin-bottom:10px;
+	background:#DDD;
+}
+
+.draggable div {
+	min-height: 40px;
+	padding:5px;
+}
+
+.highlight {
+	height:100px;
+	border:dashed 1px #F00;
+	margin-bottom:10px;
+}
+
+h3 {
+	background:#036;
+	color:#FFF;
+	margin:0;
+	padding:5px;
+	border:1px solid #FFF;
+	line-height:28px;
+	cursor:move;
+}
+
+#rightSide {
+	background-color: #CCC;
+	float: right;
+	width: 240px;
+	margin: 0 20px;
+	padding:10px;
+}
+
+.clear {
+	clear: both;
+	border: thin dotted #30C;
+	margin-top: 20px;
+}

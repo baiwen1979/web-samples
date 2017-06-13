@@ -1,0 +1,103 @@
+/* CSS Document */
+
+/*幻灯片滚动动画特效*/
+@-webkit-keyframes anim-slides 
+{
+	50% 
+	{
+		left: -965px;
+	}
+	100% 
+	{
+		left: -1930px;
+	}
+}
+
+@-moz-keyframes anim-slides 
+{
+	50% 
+	{
+		left: -965px;
+	}
+	100% 
+	{
+		left: -1930px;
+	}
+}
+
+@-ms-keyframes anim-slides 
+{
+	50% 
+	{
+		left: -965px;
+	}
+	100%
+	{
+		left: 0px;
+	}
+}
+
+@keyframes anim-slides
+{
+	50% 
+	{
+		left: -965px;
+	}
+	100%
+	{
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes anim-fadeIn
+{
+	50%
+	{
+		opacity: 0.8;
+		background: #09F;
+	}
+	100%
+	{
+		opacity: 1;
+		background: #006;
+	}
+}
+
+@keyframes anim-fadeIn
+{
+	50%
+	{
+		opacity: 0.8;
+		background: #09F;
+	}
+	100%
+	{
+		opacity: 1;
+		background: #006;
+	}
+}
+
+
+.slides 
+{
+	position: relative;
+	left: 0;
+	
+	-webkit-animation: anim-slides 4s infinite;
+	-webkit-animation-delay: 2s;
+	-moz-animation: anim-slides 4s infinite;
+	-moz-animation-delay: 2s;
+	-ms-animation: anim-slides 4s infinite;
+	-ms-animation-delay: 2s;
+	animation: anim-slides 4s infinite;
+	animation-delay: 2s;
+
+}
+
+.fade-in
+{
+	-webkit-animation: anim-fadeIn 1s infinite;
+	-webkit-animation-delay: 2s;
+	animation: anim-fadeIn 1s infinite;
+	animation-delay: 1s;	
+}

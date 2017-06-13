@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* 主题-普通 */
+html 
+{
+	background: #FFF linear-gradient(#036, #FFF) repeat-x;
+}
+
+body
+{
+	background: #EEE;
+	color: #666;
+}
+
+h2
+{
+	border-left: 1em solid darkred;
+	border-bottom: 2px solid darkred;
+}
+

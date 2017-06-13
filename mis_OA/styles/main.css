@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document: layout.css*/
+
+/*layout (主页面布局) */
+html,body {
+	overflow: hidden;
+	height:100%;
+}
+*html {
+	_padding: 75px 0 34px; /*IE6 hack*/ 
+}
+
+#hd {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 66px;
+	min-width:700px;
+}
+*#hd {
+	_height: 71px; /* hack for IE6 */ 
+}
+
+
+#bd {
+	position:absolute;
+	z-index: 1;
+	top: 70px;
+	left: 0;
+	right:0;
+	bottom: 34px;
+	min-width:700px;
+	min-height:100px;
+}
+*#bd {
+	_position:relative; /*IE6 hacks*/
+	_top: auto;
+	_bottom: auto;
+	_height: 100%;
+}
+
+#main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 200px;
+	overflow: auto;
+}
+
+#main #content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+*#main {
+	_position: static; /*IE6 hacks*/
+	_height: 100%;
+	_margin-left: 200px;
+}
+*#main #content {
+	_position: relative; /*IE6 hacks*/
+	_overflow: auto;
+	_width: 100%;
+	_height: 100%;
+}
+
+#side {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow:auto;
+    overflow-x:hidden;
+	float:left;
+	width:200px;
+}
+*#side {
+	_height: 100%; /* hack for IE6 */
+}
+
+#ft {
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 33px;
+	min-width:700px;
+}
+
+/* 主页面main.jsp/main.html样式定义 */
+#hd {
+	background: #72ACDA url(images/hd_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#C1EBEF,#72ACDA);
+	background: -webkit-gradient(linear,center top,center bottom,from(#C1EBEF),to(#72ACDA));
+	border-bottom: 4px solid #069;
+	border-top: 1px solid #FFF;
+	color:#000;
+}
+
+#hd .logo {
+	margin:10px 0 0 8px;
+	width:320px;
+	float:left;
+}
+
+.quick_links {
+	float:right;
+	margin-top:26px;
+}
+
+.quick_links ul {
+	list-style:none;
+}
+
+.quick_links ul li {
+	display:inline;
+	border-right: 1px solid #036;
+	line-height: 14px;
+	margin-right: 6px;
+	padding: 0 6px 0 0;
+	float:left;
+}
+
+.quick_links ul li.last {
+	border-right:none;
+}
+
+#side {
+	background: url(images/side-bg.png) repeat-x top #E4ECF5;
+	border-top: #FFF;
+	border-right: 1px solid #069;
+}
+
+#navHd {
+	border-bottom: 1px solid #FFF;
+	margin: 5px 10px;
+}
+
+#navHd h2 {
+	padding-top: 15px; padding-bottom: 10px;
+	border-bottom: 1px solid #09F;
+}
+
+#navHd h2 a { font-weight:normal; font-size:12px}
+
+#navigation {
+	margin:5px 0;
+}
+
+#menu h3 {
+	display:block;
+	padding:5px 10px 2px 15px;
+	background: url(images/menu-title-up.png) no-repeat 10px 10px;
+	border-bottom: 1px solid #C3E3EE;
+}
+
+#menu li.expanded h3 {
+	background: url(images/menu-title-down.png) no-repeat 10px 10px;
+}
+
+#menu a {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 15px;
+	white-space: nowrap;
+}
+
+#menu li.active,#menu li ul li.active:hover{
+	background:#72ACDA url(images/menu-active.png) repeat-x top;
+	border-top:1px solid #09F;
+	border-bottom:1px solid #FFF;
+}
+
+#menu li.active a {
+	color:#FFF;
+}
+
+#menu li ul li:hover{
+	background:#D1E8F0;
+}
+
+#menu li ul li {
+	padding-left:16px;
+}
+
+#contentFrame {
+	background:#FFF url(images/bd-bg.png) repeat-x top;
+}
+
+#ft {
+	background:#B9E0ED url(images/ft_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#F4F4F4,#B9E0ED);
+	background: -webkit-gradient(linear,center top,center bottom,from(#F4F4F4),to(#B9E0ED));
+	border-top: 1px solid #999;
+}
+
+#ft p {
+	line-height:30px;
+	padding:2px 15px;
+}
